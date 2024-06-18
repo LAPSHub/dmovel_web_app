@@ -1,0 +1,657 @@
+{
+    "app_drawer": {
+        "header": "Configurações Rápidas"
+    },
+    "theme": {
+        "title": "Tema",
+        "change": "Mudar tema",
+        "light": "Claro",
+        "dark": "Escuro",
+        "system": "Sistema",
+        "choose_theme": "Escolha um tema",
+        "cancel": "Cancelar",
+        "ok": "Ok"
+    },
+    "button": {
+        "cancel": "Cancelar",
+        "change_language": "Mudar idioma"
+    },
+    "bottom_nav_bar": {
+        "home": "Início",
+        "map": "Mapa",
+        "profile": "Perfil"
+    },
+    "language": {
+        "name": {
+            "en": "Inglês",
+            "pt": "Português",
+            "de": "Alemão"
+        },
+        "selected_message": "O idioma selecionado atualmente é {language}",
+        "selection": {
+            "message": "Por favor, selecione um idioma da lista",
+            "title": "Seleção de Idioma"
+        }
+    },
+    "logo_screen": {
+        "logo_screen": {
+            "server_error": "Ocorreu um erro no servidor",
+            "exception": "Ocorreu uma Exceção: ",
+            "error": "Ocorreu um erro: "
+        },
+        "snackbar": {
+            "close": "Fechar"
+        },
+        "navigation": {
+            "main": "/principal",
+            "sign_in": "/sign_in"
+        }
+    },
+    "sign_in_screen": {
+        "alert_dialog": {
+            "forgot_password": "Esqueci minha senha",
+            "insert_email": "Insira seu e-mail abaixo para enviarmos um código de confirmação.",
+            "back": "Voltar",
+            "send": "Enviar",
+            "verify_account": "Verifique sua conta",
+            "insert_code": "Digite o código enviado para seu e-mail.",
+            "try_again": "Caso não tenha recebido o código, retorne a tela anterior e tente novamente.",
+            "confirm": "Confirmar",
+            "choose_new_password": "Escolha uma nova senha",
+            "insert_new_password": "Insira sua nova senha",
+            "confirm_new_password": "Confirme sua nova senha",
+            "cancel": "Cancelar"
+        },
+        "auto_login": {
+            "server_error": "Ocorreu um erro no servidor",
+            "exception": "Ocorreu uma Exceção: ",
+            "error": "Ocorreu um erro: "
+        },
+        "login_screen": {
+            "login_to_account": "Entre na sua conta D-MOVEL",
+            "email_address": "Endereço de e-mail",
+            "your_email": "Seu e-mail",
+            "password": "Senha",
+            "your_password": "Sua senha",
+            "forgot_password": "Esqueceu sua senha?",
+            "click_here": " Clique aqui",
+            "login": "Entrar",
+            "or": "Ou...",
+            "no_account": "Não possui conta?",
+            "register_here": " Cadastre aqui",
+            "invalid_email": "Email inválido!",
+            "empty_fields": "Preencha todos os campos!",
+            "passwords_not_match": "Senhas não conferem!",
+            "password_changed": "Senha modificada!"
+        }
+    },
+    "sign_up_screen": {
+        "sign_up": {
+            "welcome_message": "Olá! Seja bem-vindo ao D-MOVEL",
+            "email_address": "Endereço de e-mail",
+            "email_hint": "Seu e-mail",
+            "full_name": "Nome completo",
+            "name_hint": "Seu nome completo",
+            "register_email": "Cadastrar e-mail",
+            "or_message": "Ou...",
+            "already_have_account": "Já possui conta?",
+            "login_here": " Entre aqui",
+            "confirmation_code_sent": "Enviamos um código para você",
+            "confirmation_code_message": "Este código é necessário para confirmar que o email {email} é seu.",
+            "confirmation_code": "Código de verificação",
+            "confirmation_code_hint": "Insira o código",
+            "password_choice": "Escolha uma senha",
+            "password_message": "A senha precisa ter no mínimo 8 caracteres.",
+            "password": "Senha",
+            "confirm_password": "Confirme sua senha",
+            "address": "Informe seu endereço",
+            "address_message": "A senha precisa ter no mínimo 8 caracteres.",
+            "select_state": "Selecione seu estado",
+            "select_city": "Selecione sua cidade",
+            "district": "Insira seu bairro",
+            "disability": "Você possui alguma deficiência?",
+            "select_disability": "Deficiência",
+            "next": "Próximo",
+            "register": "Cadastrar",
+            "name_empty": "Insira seu nome",
+            "invalid_email": "Por favor, insira um e-mail válido"
+        },
+        "alert_dialog": {
+            "cancel_account_creation": "Tem certeza que deseja cancelar a criação da conta?",
+            "yes_cancel": "Sim, cancelar",
+            "no_continue": "Não, continuar criando"
+        },
+        "disability_dropdown": {
+            "no": "Não",
+            "disabilities": "Deficiência(s)",
+            "mental_disorders": "Transtorno(s) mental(is)",
+            "learning_disorders": "Transtorno(s) de aprendizagem",
+            "genetic_syndromes": "Síndrome(s) genética(s)"
+        },
+        "app_bar": {
+            "creating_account": "Criando conta",
+            "step": "Etapa"
+        },
+        "snackbar": {
+            "server_error": "Ocorreu um erro no servidor!",
+            "exception": "Houve uma exceção: ",
+            "error": "Houve um erro: "
+        },
+        "warning_message": {
+            "passwords_not_match": "As senhas não conferem",
+            "password_too_short": "A senha precisa ter no mínimo 6 caracteres",
+            "confirm_password_empty": "A confirmação de senha não pode estar vazia",
+            "password_empty": "A senha não pode estar vazia",
+            "district_empty": "Insira o bairro onde você mora",
+            "city_empty": "Selecione a cidade onde você mora",
+            "state_empty": "Selecione o estado onde você mora",
+            "disability_empty": "Selecione uma opção de deficiência",
+            "this_is": "É isso aí",
+            "finish_register": "Cadastro finalizado!"
+        }
+    },
+    "category_filtered_screen": {
+        "no_places_message": "Ops! Parece ainda não há locais na categoria \"{title}\" :(",
+        "register_new_place": "Cadastrar novo local",
+        "all_results_seen": "Você viu todos resultados da busca...",
+        "check_internet_connection": "Verifique sua conexão com a internet e tente novamente!"
+    },
+    "favorites_screen": {
+        "app_bar": {
+            "title": "Favoritos"
+        },
+        "favorites_screen": {
+            "no_favorites_message": "Você ainda não tem nenhum lugar favorito!",
+            "error_message": "Desculpe, ocorreu um erro ao carregar sua lista de favoritos."
+        },
+        "error": {
+            "loading_list": "Erro ao carregar a lista"
+        }
+    },
+    "home_screen": {
+        "order_list": {
+            "most_recent": "Mais recente",
+            "oldest": "Mais antigo",
+            "closest": "Mais próximo (20 km)",
+            "highest_accessibility": "Maior acessibilidade",
+            "lowest_accessibility": "Menor acessibilidade"
+        },
+        "category_list": {
+            "favorites": "Favoritos",
+            "leisure": "Lazer",
+            "health": "Saúde",
+            "education": "Educação",
+            "government": "Governo",
+            "others": "Outros"
+        },
+        "no_nearby_locations": "Não há locais próximos de você!",
+        "no_locations_yet": "Ainda não existem locais cadastrados :(",
+        "all_locations_viewed": "Você viu todos os locais cadastrados...",
+        "location_permission_needed": "Para utilizar esta funcionalidade você precisa habilitar a localização no seu celular e nos dar a permissão de usa-la!",
+        "check_internet_connection": "Verifique sua conexão com a internet e tente novamente!",
+        "try_again": "Tentar novamente",
+        "add_location": "Adicionar local",
+        "categories": "Categorias",
+        "locations": "Locais"
+    },
+    "profile_screen": {
+        "app_bar": {
+            "title": "logo_dmovel.png"
+        },
+        "profile_options": {
+            "registered_places": "Locais cadastrados",
+            "accessibility_ratings": "Avaliações de acessibilidade",
+            "account_security": "Segurança da conta",
+            "logout": "Finalizar sessão",
+            "sub_title": "Email, senha"
+        },
+        "edit_button": {
+            "text": "Editar"
+        },
+        "user_info": {
+            "address_icon": "pin_drop",
+            "disability_icon": "accessibility_new",
+            "user": "Usuário ",
+            "no_disability": "sem deficiência",
+            "with_disability": "com "
+        },
+        "retry_button": {
+            "text": "Tentar novamente"
+        },
+        "logout_dialog": {
+            "title": "Tem certeza que deseja sair?",
+            "exit": "Sair"
+        }
+    },
+    "search_screen": {
+        "app_bar": {
+            "title": "Buscar"
+        },
+        "text_field": {
+            "hint": "Ex: Mirante UFPA"
+        },
+        "empty_search_result": {
+            "message": "Ops! Parece que este local ainda não está cadastrado :(",
+            "button": "Cadastrar novo local"
+        },
+        "search_result": {
+            "end_message": "Você viu todos os resultados da busca...",
+            "not_found_message": "Não achou o local desejado?",
+            "button": "Cadastrar novo local"
+        },
+        "error_message": {
+            "no_internet": "Verifique sua conexão com a internet e tente novamente!"
+        },
+        "empty_search_field": {
+            "message": "Para pesquisar, insira o nome do local que você quer procurar!"
+        }
+    },
+    "add_poi_desc": {
+        "category_list": {
+            "leisure": "Lazer",
+            "health": "Saúde",
+            "education": "Educação",
+            "government": "Governo",
+            "others": "Outros"
+        },
+        "app_bar": {
+            "title": "Adicionando local"
+        },
+        "poi_address": {
+            "icon": "Ícone de localização"
+        },
+        "poi_image": {
+            "button": "Toque aqui para escolher uma imagem"
+        },
+        "poi_name": {
+            "label": "Nome do local",
+            "hint": "Ex.: Mirante UFPA"
+        },
+        "poi_category": {
+            "label": "Categoria do local"
+        },
+        "poi_description": {
+            "label": "Descrição",
+            "hint": "Uma breve descrição sobre o local, ajudará as pessoas a indentifica-lo mais facilmente."
+        },
+        "buttons": {
+            "cancel": "Cancelar",
+            "save": "Salvar",
+            "saving": "Salvando..."
+        },
+        "snackbar": {
+            "no_image_selected": "Nenhuma imagem selecionada",
+            "exception_occurred": "Ocorreu uma exceção: ",
+            "no_image_selected1": "Nenhuma Imagem foi selecionada",
+            "null": "Campo de nome ou descrição vazio",
+            "no_category_selected": "Categoria não selecionada",
+            "upload_erro": "Não foi possível fazer upload da imagem",
+            "add_local": "Local adicionado com sucesso!",
+            "first_avaliation": "Seja o primeiro a avaliar clicando no botão Avaliar local!"
+        }
+    },
+    "add_poi_location": {
+        "app_bar": {
+            "title": "Adicionando local"
+        },
+        "text_field": {
+            "title": "Pesquise o endereço",
+            "hint": "Ex.: Mirante UFPA"
+        },
+        "button": {
+            "search": "Pesquisar",
+            "searching": "Pesquisando...",
+            "search_map": "Procurar pelo mapa"
+        },
+        "search_results": {
+            "address_not_found": "Não achou o local?"
+        },
+        "error_messages": {
+            "no_location_found": "Não foi possivel achar um local com estas informações, tente adicionar mais detalhes como a cidade em que ele se encontra",
+            "exception": "Houve uma exceção: ",
+            "error": "Houve um erro: "
+        }
+    },
+    "add_poi_map": {
+        "app_bar": {
+            "title": "Adicionando local"
+        },
+        "button": {
+            "confirm": "Confirmar"
+        },
+        "map": {
+            "info_window": {
+                "snippet": "Toque aqui para ver mais"
+            }
+        },
+        "error_messages": {
+            "too_close": "Muito perto de outro local!"
+        }
+    },
+    "rate_poi": {
+        "app_bar": {
+            "edit_rating": "Editar Avaliação",
+            "add_rating": "Adicionar avaliação"
+        },
+        "button": {
+            "cancel": "Cancelar"
+        },
+        "text": {
+            "your_opinion_about": "Sua opinião sobre",
+            "here_you_should_rate": "Aqui você deve dar notas de 1 a 5 para o local, de acordo com cada uma das caracteristicas abaixo:",
+            "physical_mobility": "Mobilidade Física: ",
+            "signaling": "Sinalização: ",
+            "service": "Atendimento: ",
+            "comment_about_the_place": "Caso queira, comente um pouco sobre o local:",
+            "example_comment": "Ex.: Elevador 2 não funciona!"
+        },
+        "snackbar": {
+            "msg": "Por favor, avalie cada característica do local"
+        },
+        "rating": {
+            "physical_mobility": {
+                "zero": "Avaliação de mobilidade física não definida.",
+                "one": "Avaliação de mobilidade física é 1.",
+                "two": "Avaliação de mobilidade física é 2.",
+                "other": "Avaliação de mobilidade física é {{value}}."
+            },
+            "signaling": {
+                "zero": "Avaliação de sinalização não definida.",
+                "one": "Avaliação de sinalização é 1.",
+                "two": "Avaliação de sinalização é 2.",
+                "other": "Avaliação de sinalização é {{value}}."
+            },
+            "service": {
+                "zero": "Avaliação de atendimento não definida.",
+                "one": "Avaliação de atendimento é 1.",
+                "two": "Avaliação de atendimento é 2.",
+                "other": "Avaliação de atendimento é {{value}}."
+            }
+        }
+    },
+    "show_poi": {
+        "show_poi_screen": {
+            "server_error": "Desculpe, houve um problema no servidor",
+            "exception": "Exception: ",
+            "error": "Error: ",
+            "server_problem": "Ocorreu um problema no servidor",
+            "favorite_error": "Erro ao favoritar",
+            "server_error_exclamation": "Erro no servidor!"
+        },
+        "filter": {
+            "title": "Filtrar",
+            "order_by": "Ordenar por",
+            "most_recent": "Mais recente",
+            "oldest": "Mais antigo",
+            "highest_accessibility": "Maior nota",
+            "lowest_accessibility": "Menor nota",
+            "review": "Avaliação",
+            "clear_filters": "Resetar filtro"
+        },
+        "screen": {
+            "title": "Local",
+            "register_in": "Cadastrado em",
+            "reviews": "Avaliações ",
+            "filted": "filtradas ",
+            "filter": "Filtrar",
+            "no_reviews": "Ainda não existem avaliações para este local...",
+            "be_the_first": "Seja o primeiro a avaliar!",
+            "rate_poi": "Avaliar local",
+            "loading": "Carregando..."
+        },
+        "filter_section": {
+            "title": "title"
+        },
+        "filter_order_by_item": {
+            "title": "title"
+        },
+        "filter_rating_item": {
+            "stars": "stars"
+        }
+    },
+    "my_pois": {
+        "app_bar": {
+            "title": "Locais cadastrados"
+        },
+        "error_messages": {
+            "load_error": "Erro ao carregar a lista",
+            "no_places": "Você ainda não cadastrou nenhum lugar!",
+            "fetch_error": "Desculpe, ocorreu um erro ao carregar sua lista de locais cadastrados."
+        }
+    },
+    "my_ratings": {
+        "my_ratings_screen": {
+            "app_bar_title": "Minhas avaliações",
+            "no_ratings_message": "Você ainda não avaliou nenhum lugar!",
+            "server_error_message": "Desculpe, houve um problema no servidor",
+            "exception_message": "Exception: ",
+            "error_message": "Error: ",
+            "loading_error_message": "Desculpe, ocorreu um erro ao carregar sua lista de avaliações."
+        },
+        "rating_item": {
+            "rating": {
+                "average": "averageRating"
+            }
+        }
+    },
+    "account_security_screen": {
+        "app_bar_title": "Segurança da conta",
+        "change_email_button": "Alterar e-mail",
+        "change_password_button": "Alterar senha"
+    },
+    "edit_email": {
+        "edit_email_screen": {
+            "title": "Alterando e-mail",
+            "new_email_prompt": "Insira seu novo e-mail",
+            "password_prompt": "Insira sua senha",
+            "confirmation_code_prompt": "Insira o código de confirmação",
+            "continue_button": "Continuar",
+            "save_button": "Salvar"
+        },
+        "validation_messages": {
+            "empty_password": "Você precisa confirmar sua senha!",
+            "invalid_email": "Por favor, insira um e-mail válido",
+            "empty_email": "Insira seu novo e-mail",
+            "server_error": "Houve algum erro no servidor!",
+            "exception_error": "Houve uma exceção: ",
+            "error": "Houve um erro: "
+        },
+        "api_calls": {
+            "change_email": "auth/changeEmail",
+            "confirm_change_email": "auth/confirmChangeEmail"
+        },
+        "success_messages": {
+            "success": "Sucesso!",
+            "new_email_instruction": "Para entrar na sua conta você deve utilizar o e-mail "
+        }
+    },
+    "edit_password": {
+        "edit_password_screen": {
+            "title": "Alterando senha",
+            "old_password_prompt": "Insira sua senha atual",
+            "new_password_prompt": "Insira sua nova senha",
+            "confirm_new_password_prompt": "Confirme sua nova senha",
+            "save_button": "Salvar"
+        },
+        "validation_messages": {
+            "password_mismatch": "Verifique se sua nova senha confere nos dois campos!",
+            "empty_confirm_password": "Você precisa confirmar sua nova senha!",
+            "empty_new_password": "Você precisa inserir sua nova senha!",
+            "empty_old_password": "Você precisa inserir sua senha atual!",
+            "server_error": "Houve algum erro no servidor!",
+            "exception_error": "Houve uma exceção: ",
+            "error": "Houve um erro: "
+        },
+        "api_calls": {
+            "change_password": "auth/changePassword"
+        },
+        "success_messages": {
+            "success": "Alteração de senha realizada com sucesso!"
+        }
+    },
+    "edit_address": {
+        "update_your_address": "Atualize seu endereço",
+        "select_your_state": "Selecione seu estado",
+        "select_your_city": "Selecione sua cidade",
+        "enter_your_district": "Insira seu bairro",
+        "save": "Salvar",
+        "warning": {
+            "empty_fields": "Os campos de estado, cidade e/ou bairro não pode ficar em branco, por favor tenha certeza de que todos estão preenchidos."
+        },
+        "error": {
+            "server_error": "Houve algum erro no servidor!",
+            "exception": "Houve uma exceção: ",
+            "error": "Houve um erro: "
+        },
+        "success": {
+            "address_changed": "Você alterou seu endereço!"
+        }
+    },
+    "edit_avatar": {
+        "edit_avatar_screen": {
+            "no_image_selected": "Nenhuma imagem selecionada",
+            "exception_occurred": "Ocorreu uma exceção: ",
+            "error_occurred": "Ocorreu um erro: ",
+            "no_changes_made": "Nenhuma mudança realizada.",
+            "server_error": "Desculpe, houve um erro no servidor :(",
+            "exception": "Houve uma exceção: ",
+            "error": "Houve um erro: "
+        },
+        "update_profile_picture": "Atualize sua foto de perfil",
+        "choose_new_photo": "Escolher nova foto",
+        "remove_photo": "Remover foto",
+        "save": "Salvar"
+    },
+    "edit_disability": {
+        "edit_disability_screen": {
+            "title": "Editando nome",
+            "update_info": "Atualize suas informações de deficiência",
+            "question": "Você possui alguma deficiência?",
+            "save_button": "Salvar",
+            "success_message": "Alteração de deficiência realizada com sucesso!",
+            "server_error": "Houve algum erro no servidor!",
+            "exception_message": "Houve uma exceção: ",
+            "error_message": "Houve um erro: "
+        },
+        "disability_options": {
+            "no": "Não",
+            "disabilities": "Deficiência(s)",
+            "mental_disorders": "Transtorno(s) mental(is)",
+            "learning_disorders": "Transtorno(s) de aprendizagem",
+            "genetic_syndromes": "Síndrome(s) genética(s)"
+        }
+    },
+    "edit_name_screen": {
+        "title": "Editando nome",
+        "update_info": "Atualize seu nome",
+        "input_label": "Insira seu nome",
+        "save_button": "Salvar",
+        "success_message": "Alteração de nome realizada com sucesso!",
+        "server_error": "Houve algum erro no servidor!",
+        "exception_message": "Houve uma exceção: ",
+        "error_message": "Houve um erro: ",
+        "empty_name_warning": "O seu nome não pode ficar em branco!"
+    },
+    "edit_profile_screen": {
+        "app_bar_title": "Editar perfil",
+        "question": "O que você deseja editar?",
+        "button": {
+            "profile_picture": "Foto de perfil",
+            "name": "Nome",
+            "address": "Endereço",
+            "disability": "Deficiência"
+        }
+    },
+    "add_poi_placesearch_listview": {
+        "search_results_screen": {
+            "registered_location": "(LOCAL CADASTRADO)\n",
+            "progress_indicator": {
+                "color": "Cinza 400",
+                "background_color": "Cinza 500"
+            }
+        },
+        "navigation": {
+            "add_poi_desc": "/add_poi_desc"
+        }
+    },
+    "google_sign_in_button": {
+        "sign_in_failed": "Sign in Failed",
+        "register_with_google": "Cadastrar com Google",
+        "sign_in_with_google": "Entrar com Google",
+        "security_code_not_confirmed": "Código de segurança não confirmado",
+        "server_error": "Erro no servidor!",
+        "exception_occurred": "Ocorreu uma Exceção: ",
+        "error_occurred": "Ocorreu um erro: ",
+        "close": "Fechar"
+    },
+    "home_poi_listview": {
+        "poi_list_view": {
+            "no_permission": "noPermission",
+            "no_reviews": "Sem avaliações",
+            "reviews": "avaliações",
+            "review": "avaliação",
+            "km": "km"
+        },
+        "show_poi": {
+            "id": "id"
+        }
+    },
+    "poi_ratings_listview": {
+        "delete_rating": {
+            "server_error": "Erro no servidor!",
+            "exception": "Exception: ",
+            "error": "Erro: "
+        },
+        "confirm_dialog": {
+            "title": "Quer mesmo apagar?",
+            "irreversible_action": "Esta ação é irreversivel.",
+            "delete": "Apagar",
+            "cancel": "Cancelar"
+        },
+        "months": {
+            "jan": "jan",
+            "feb": "fev",
+            "mar": "mar",
+            "apr": "abr",
+            "may": "mai",
+            "jun": "jun",
+            "jul": "jul",
+            "aug": "ago",
+            "sep": "set",
+            "oct": "out",
+            "nov": "nov",
+            "dec": "dez"
+        },
+        "ratings": {
+            "physical_mobility": "Mob. física",
+            "signage": "Sinalização",
+            "service": "Atendimento"
+        },
+        "edited_times": {
+            "once": "vez",
+            "multiple": "vezes"
+        },
+        "rated_on": "Avaliado em "
+    },
+    "select_search_dialog": {
+        "invalid_search_type": "Selecione um tipo de pesquisa válida",
+        "select_state": "Selecione seu estado",
+        "select_city": "Selecione sua cidade",
+        "search_hint": "Pesquise aqui",
+        "no_search_results": "Não há resultados para a sua busca.",
+        "error_loading_list": "Erro ao carregar a lista, tente novamente mais tarde."
+    },
+    "show_message": {
+        "snackbar": {
+            "close": "Fechar"
+        }
+    },
+    "show_warning": {
+        "ok_button": "Ok"
+    },
+    "search_local": {
+        "search_local": "Pesquisar local",
+        "search_hint": "Insira o nome do local",
+        "poi_snippet": "Toque aqui para ver mais"
+    }
+}
