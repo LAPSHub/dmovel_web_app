@@ -58345,7 +58345,7 @@ return A.p(t._.b(o)?o:A.bv(o,t.z),$async$fF)
 case 3:n=d
 o=t.N
 s=4
-return A.p(A.b3_(A.eI("https://dmovel.zapto.org/api/"+b),B.w.pl(a,null),A.a6(["Content-type","application/json","Accept","application/json","Authorization","Bearer "+A.j(n)],o,o)),$async$fF)
+return A.p(A.b3_(A.eI("https://api.dmovelapp.com.br/"+b),B.w.pl(a,null),A.a6(["Content-type","application/json","Accept","application/json","Authorization","Bearer "+A.j(n)],o,o)),$async$fF)
 case 4:q=d
 s=1
 break
@@ -58359,7 +58359,7 @@ return A.p(t._.b(o)?o:A.bv(o,t.z),$async$h_)
 case 3:n=d
 o=t.N
 s=4
-return A.p(A.b2I(A.eI("https://dmovel.zapto.org/api/"+b),A.a6(["Content-type","application/json","Accept","application/json","Authorization","Bearer "+A.j(n)],o,o)),$async$h_)
+return A.p(A.b2I(A.eI("https://api.dmovelapp.com.br/"+b),A.a6(["Content-type","application/json","Accept","application/json","Authorization","Bearer "+A.j(n)],o,o)),$async$h_)
 case 4:q=d
 s=1
 break
@@ -58373,7 +58373,7 @@ return A.p(t._.b(o)?o:A.bv(o,t.z),$async$o_)
 case 3:n=d
 o=t.N
 s=4
-return A.p(A.bvf(A.eI("https://dmovel.zapto.org/api/"+b),B.w.pl(a,null),A.a6(["Content-type","application/json","Accept","application/json","Authorization","Bearer "+A.j(n)],o,o)),$async$o_)
+return A.p(A.bvf(A.eI("https://api.dmovelapp.com.br/"+b),B.w.pl(a,null),A.a6(["Content-type","application/json","Accept","application/json","Authorization","Bearer "+A.j(n)],o,o)),$async$o_)
 case 4:q=d
 s=1
 break
@@ -58387,7 +58387,7 @@ return A.p(t._.b(o)?o:A.bv(o,t.z),$async$v4)
 case 3:n=e
 o=t.N
 s=4
-return A.p(A.bd6(A.eI("https://dmovel.zapto.org/api/"+c),B.w.pl(b,null),A.a6(["Content-type","application/json","Accept","application/json","Authorization","Bearer "+A.j(n)],o,o)),$async$v4)
+return A.p(A.bd6(A.eI("https://api.dmovelapp.com.br/"+c),B.w.pl(b,null),A.a6(["Content-type","application/json","Accept","application/json","Authorization","Bearer "+A.j(n)],o,o)),$async$v4)
 case 4:q=e
 s=1
 break
