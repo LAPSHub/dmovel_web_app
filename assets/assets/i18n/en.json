@@ -111,9 +111,6 @@
 			"confirm_password": "Confirm your password",
 			"address": "Enter your address",
 			"address_message": "The password must have at least 8 characters.",
-			"select_state": "Select your state",
-			"select_city": "Select your city",
-			"district": "Enter your district",
 			"disability": "Do you have any disabilities?",
 			"select_disability": "Disability",
 			"next": "Next",
@@ -144,7 +141,7 @@
 		},
 		"warning_message": {
 			"passwords_not_match": "Passwords do not match",
-			"password_too_short": "The password must have at least 6 characters",
+			"password_too_short": "The password must have at least 8 characters",
 			"confirm_password_empty": "The confirmation password cannot be empty",
 			"password_empty": "The password cannot be empty",
 			"district_empty": "Enter the district where you live",
@@ -192,9 +189,13 @@
 		"no_nearby_locations": "There are no locations near you!",
 		"no_locations_yet": "There are no registered locations yet :(",
 		"all_locations_viewed": "You have viewed all registered locations...",
-		"location_permission_needed": "To use this feature, you need to enable location on your phone and give us permission to use it!",
+    "location_permission_needed": "To use this feature, you need to give us permission to access your device's location! Please try again",
+    "set_permission_on_settings": "Location permission permanently denied. You need to grant the permission in your device settings.",
 		"check_internet_connection": "Check your internet connection and try again!",
+    "location_disabled": "Device location is disabled. Try enabling it",
+    "location_unavailable": "Location service is unavailable",
 		"try_again": "Try again",
+    "open_settings": "Open settings",
 		"add_location": "Add location",
 		"categories": "Categories",
 		"locations": "Locations"
@@ -299,6 +300,11 @@
 		"app_bar": {
 			"title": "Adding place"
 		},
+    "alert_dialog":{
+      "title": "Location already registered",
+      "content": "The selected location has already been registered",
+      "close_button": "Close"
+    },
 		"text_field": {
 			"title": "Search for an address",
 			"hint": "Ex.: UFPA Viewpoint"
@@ -495,10 +501,7 @@
 		}
 	},
 	"edit_address": {
-		"update_your_address": "Update your address",
-		"select_your_state": "Select your state",
-		"select_your_city": "Select your city",
-		"enter_your_district": "Enter your district",
+		"title": "Edit address",
 		"save": "Save",
 		"warning": {
 			"empty_fields": "The state, city, and/or district fields cannot be left blank, please make sure all are filled in."
@@ -522,15 +525,14 @@
 			"exception": "An exception occurred: ",
 			"error": "An error occurred: "
 		},
-		"update_profile_picture": "Update your profile picture",
+		"title": "Edit profile picture",
 		"choose_new_photo": "Choose new photo",
 		"remove_photo": "Remove photo",
 		"save": "Save"
 	},
 	"edit_disability": {
 		"edit_disability_screen": {
-			"title": "Editing disability",
-			"update_info": "Update your disability information",
+			"title": "Edit disability",
 			"question": "Do you have any disabilities?",
 			"save_button": "Save",
 			"success_message": "Disability change successful!",
@@ -547,8 +549,7 @@
 		}
 	},
 	"edit_name_screen": {
-		"title": "Editing name",
-		"update_info": "Update your name",
+		"title": "Edit name",
 		"input_label": "Enter your name",
 		"save_button": "Save",
 		"success_message": "Name change successful!",
@@ -640,12 +641,36 @@
 		"rated_on": "Rated on ",
 		"translate_button": {
 			"text": "Translate"
-		}
+		},
+    "show_original_button": {
+        "text": "Show original"
+    },
+    "try_again_button": {
+        "text": "Try again"
+    },
+    "translation_error_message": "There was an error in the translation, please try again"
 	},
+  "address_form": {
+		"select_your_country": "Select your Country",
+		"select_your_state": "Select your State",
+		"select_your_city": "Select your City",
+		"enter_your_district": "Enter your District",
+    "postal_code": "Enter your postcode",
+    "optional" : "Optional",
+    "or": "Or",
+    "code_text_field" : {
+      "text_hint": "Postcode",
+      "country": "Country",
+      "state": "State",
+      "city": "City",
+      "district": "District"
+    }
+  },
 	"select_search_dialog": {
 		"invalid_search_type": "Select a valid search type",
-		"select_state": "Select your state",
-		"select_city": "Select your city",
+		"select_country": "Select your Country",
+		"select_state": "Select your State",
+		"select_city": "Select your City",
 		"search_hint": "Search here",
 		"no_search_results": "No results found for your search.",
 		"error_loading_list": "Error loading the list, please try again later."

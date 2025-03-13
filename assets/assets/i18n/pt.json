@@ -111,9 +111,6 @@
             "confirm_password": "Confirme sua senha",
             "address": "Informe seu endereço",
             "address_message": "A senha precisa ter no mínimo 8 caracteres.",
-            "select_state": "Selecione seu estado",
-            "select_city": "Selecione sua cidade",
-            "district": "Insira seu bairro",
             "disability": "Você possui alguma deficiência?",
             "select_disability": "Deficiência",
             "next": "Próximo",
@@ -144,7 +141,7 @@
         },
         "warning_message": {
             "passwords_not_match": "As senhas não conferem",
-            "password_too_short": "A senha precisa ter no mínimo 6 caracteres",
+            "password_too_short": "A senha precisa ter no mínimo 8 caracteres",
             "confirm_password_empty": "A confirmação de senha não pode estar vazia",
             "password_empty": "A senha não pode estar vazia",
             "district_empty": "Insira o bairro onde você mora",
@@ -192,9 +189,13 @@
         "no_nearby_locations": "Não há locais próximos de você!",
         "no_locations_yet": "Ainda não existem locais cadastrados :(",
         "all_locations_viewed": "Você viu todos os locais cadastrados...",
-        "location_permission_needed": "Para utilizar esta funcionalidade você precisa habilitar a localização no seu celular e nos dar a permissão de usa-la!",
+        "location_permission_needed": "Para utilizar esta funcionalidade você precisa nos conceder permissão de localização do seu dispositivo! Tente novamente",
+        "set_permission_on_settings": "Permissão de locatização permanentemente negada. Você precisa nos conceder permissão nas configurações do seu dispositivo.",
         "check_internet_connection": "Verifique sua conexão com a internet e tente novamente!",
+        "location_disabled": "Localização do disposistivo está desabilitada. Tente habilitá-la",
+        "location_unavailable": "O serviço de localização está indisponível.",
         "try_again": "Tentar novamente",
+        "open_settings": "Abrir configurações",
         "add_location": "Adicionar local",
         "categories": "Categorias",
         "locations": "Locais"
@@ -298,6 +299,11 @@
     "add_poi_location": {
         "app_bar": {
             "title": "Adicionando local"
+        },
+        "alert_dialog":{
+          "title": "Local já registrado",
+          "content": "O local selecionado já foi registrado",
+          "close_button": "Fechar"
         },
         "text_field": {
             "title": "Pesquise o endereço",
@@ -495,10 +501,7 @@
         }
     },
     "edit_address": {
-        "update_your_address": "Atualize seu endereço",
-        "select_your_state": "Selecione seu estado",
-        "select_your_city": "Selecione sua cidade",
-        "enter_your_district": "Insira seu bairro",
+        "title": "Editar endereço",
         "save": "Salvar",
         "warning": {
             "empty_fields": "Os campos de estado, cidade e/ou bairro não pode ficar em branco, por favor tenha certeza de que todos estão preenchidos."
@@ -522,15 +525,14 @@
             "exception": "Houve uma exceção: ",
             "error": "Houve um erro: "
         },
-        "update_profile_picture": "Atualize sua foto de perfil",
+        "title": "Editar foto de perfil",
         "choose_new_photo": "Escolher nova foto",
         "remove_photo": "Remover foto",
         "save": "Salvar"
     },
     "edit_disability": {
         "edit_disability_screen": {
-            "title": "Editando nome",
-            "update_info": "Atualize suas informações de deficiência",
+            "title": "Editar deficiência",
             "question": "Você possui alguma deficiência?",
             "save_button": "Salvar",
             "success_message": "Alteração de deficiência realizada com sucesso!",
@@ -547,8 +549,7 @@
         }
     },
     "edit_name_screen": {
-        "title": "Editando nome",
-        "update_info": "Atualize seu nome",
+        "title": "Editar nome",
         "input_label": "Insira seu nome",
         "save_button": "Salvar",
         "success_message": "Alteração de nome realizada com sucesso!",
@@ -640,12 +641,36 @@
         "rated_on": "Avaliado em ",
         "translate_button": {
             "text": "Traduzir"
+        },
+        "show_original_button": {
+            "text": "Mostrar original"
+        },
+        "try_again_button": {
+            "text": "Tentar novamente"
+        },
+        "translation_error_message": "Ocorreu um erro na tradução, tente novamente"
+    },
+    "address_form": {
+        "select_your_country": "Selecione seu País",
+        "select_your_state": "Selecione seu Estado",
+        "select_your_city": "Selecione sua Cidade",
+        "enter_your_district": "Insira seu Bairro",
+        "postal_code": "Insira seu CEP",
+        "optional" : "Opcional",
+        "or": "Ou",
+        "code_text_field" : {
+          "text_hint": "CEP",
+          "country": "País",
+          "state": "Estado",
+          "city": "Cidade",
+          "district": "Distrito"
         }
     },
     "select_search_dialog": {
         "invalid_search_type": "Selecione um tipo de pesquisa válida",
-        "select_state": "Selecione seu estado",
-        "select_city": "Selecione sua cidade",
+        "select_country": "Selecione seu País",
+        "select_state": "Selecione seu Estado",
+        "select_city": "Selecione sua Cidade",
         "search_hint": "Pesquise aqui",
         "no_search_results": "Não há resultados para a sua busca.",
         "error_loading_list": "Erro ao carregar a lista, tente novamente mais tarde."

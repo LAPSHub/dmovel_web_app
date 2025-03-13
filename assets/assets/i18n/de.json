@@ -111,9 +111,6 @@
             "confirm_password": "Passwort bestätigen",
             "address": "Geben Sie Ihre Adresse ein",
             "address_message": "Das Passwort muss mindestens 8 Zeichen lang sein.",
-            "select_state": "Wählen Sie Ihr Bundesland",
-            "select_city": "Wählen Sie Ihre Stadt",
-            "district": "Geben Sie Ihren Stadtteil ein",
             "disability": "Haben Sie eine Behinderung?",
             "select_disability": "Behinderung auswählen",
             "next": "Weiter",
@@ -144,7 +141,7 @@
         },
         "warning_message": {
             "passwords_not_match": "Die Passwörter stimmen nicht überein",
-            "password_too_short": "Das Passwort muss mindestens 6 Zeichen lang sein",
+            "password_too_short": "Das Passwort muss mindestens 8 Zeichen lang sein",
             "confirm_password_empty": "Die Bestätigung des Passworts darf nicht leer sein",
             "password_empty": "Das Passwort darf nicht leer sein",
             "district_empty": "Geben Sie den Stadtteil ein, in dem Sie wohnen",
@@ -192,9 +189,13 @@
         "no_nearby_locations": "Es gibt keine Orte in Ihrer Nähe!",
         "no_locations_yet": "Es sind noch keine Orte registriert :(",
         "all_locations_viewed": "Sie haben alle registrierten Orte angesehen...",
-        "location_permission_needed": "Um diese Funktion zu nutzen, müssen Sie die Standortfunktion auf Ihrem Telefon aktivieren und uns die Erlaubnis zur Nutzung geben!",
+        "location_permission_needed": "Um diese Funktion zu nutzen, müssen Sie uns die Erlaubnis geben, auf den Standort Ihres Geräts zuzugreifen! Bitte versuchen Sie es erneut.",
+        "set_permission_on_settings": "Standortberechtigung dauerhaft verweigert. Sie müssen die Berechtigung in den Einstellungen Ihres Geräts gewähren.",
         "check_internet_connection": "Überprüfen Sie Ihre Internetverbindung und versuchen Sie es erneut!",
+        "location_disabled": "Standort des Geräts ist deaktiviert. Versuchen Sie, es zu aktivieren.",
+        "location_unavailable": "Der Ortungsdienst ist nicht verfügbar.",
         "try_again": "Erneut versuchen",
+        "open_settings": "Einstellungen öffnen",
         "add_location": "Ort hinzufügen",
         "categories": "Kategorien",
         "locations": "Orte"
@@ -298,6 +299,11 @@
     "add_poi_location": {
         "app_bar": {
             "title": "Ort hinzufügen"
+        },
+        "alert_dialog":{
+          "title": "Ort bereits registriert",
+          "content": "Der ausgewählte Ort wurde bereits registriert",
+          "close_button": "Schließen"
         },
         "text_field": {
             "title": "Adresse suchen",
@@ -495,10 +501,7 @@
         }
     },
     "edit_address": {
-        "update_your_address": "Aktualisieren Sie Ihre Adresse",
-        "select_your_state": "Wählen Sie Ihr Bundesland",
-        "select_your_city": "Wählen Sie Ihre Stadt",
-        "enter_your_district": "Geben Sie Ihren Bezirk ein",
+        "title": "Adresse bearbeiten",
         "save": "Speichern",
         "warning": {
             "empty_fields": "Die Felder Bundesland, Stadt und/oder Bezirk dürfen nicht leer gelassen werden, bitte stellen Sie sicher, dass alle ausgefüllt sind."
@@ -522,7 +525,7 @@
             "exception": "Es ist eine Ausnahme aufgetreten: ",
             "error": "Es ist ein Fehler aufgetreten: "
         },
-        "update_profile_picture": "Aktualisieren Sie Ihr Profilbild",
+        "title": "Profilbild bearbeiten",
         "choose_new_photo": "Wählen Sie ein neues Foto",
         "remove_photo": "Foto entfernen",
         "save": "Speichern"
@@ -530,7 +533,6 @@
     "edit_disability": {
         "edit_disability_screen": {
             "title": "Behinderung bearbeiten",
-            "update_info": "Aktualisieren Sie Ihre Informationen zur Behinderung",
             "question": "Haben Sie eine Behinderung?",
             "save_button": "Speichern",
             "success_message": "Änderung der Behinderung erfolgreich!",
@@ -548,7 +550,6 @@
     },
     "edit_name_screen": {
         "title": "Name bearbeiten",
-        "update_info": "Aktualisieren Sie Ihren Namen",
         "input_label": "Geben Sie Ihren Namen ein",
         "save_button": "Speichern",
         "success_message": "Namensänderung erfolgreich!",
@@ -640,10 +641,34 @@
         "rated_on": "Bewertet am ",
         "translate_button": {
             "text": "Übersetzen"
+        },
+        "show_original_button": {
+          "text": "Original anzeigen"
+        },
+        "try_again_button": {
+          "text": "Nochmal versuchen"
+        },
+        "translation_error_message": "Es ist ein Fehler bei der Übersetzung aufgetreten, bitte versuchen Sie es erneut"
+    },
+    "address_form":{
+        "select_your_country": "Wählen Sie Ihr Land",
+        "select_your_state": "Wählen Sie Ihr Bundesland",
+        "select_your_city": "Wählen Sie Ihre Stadt",
+        "enter_your_district": "Geben Sie Ihren Bezirk ein",
+        "postal_code":"Geben Sie Ihre PLZ ein",
+        "optional" : "Optional",
+        "or": "Oder",
+        "code_text_field" : {
+          "text_hint": "PLZ",
+          "country": "Land",
+          "state": "Bundesland",
+          "city": "Stadt",
+          "district": "Bezirk"
         }
     },
     "select_search_dialog": {
         "invalid_search_type": "Wählen Sie einen gültigen Suchtyp",
+        "select_country": "Wählen Sie Ihr Land",
         "select_state": "Wählen Sie Ihr Bundesland",
         "select_city": "Wählen Sie Ihre Stadt",
         "search_hint": "Hier suchen",
