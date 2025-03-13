@@ -45,6 +45,11 @@
 </head>
 
 <body>
+  <script>
+    window.flutterConfiguration = {
+      renderer: "canvaskit"
+    };
+  </script>
   <script src="flutter_bootstrap.js" async></script>
   <script src="main.dart.js" type="application/javascript"></script>
   <script src="https://www.gstatic.com/firebasejs/10.12.2/firebase-app.js"></script>
@@ -72,6 +77,7 @@
     // Initialize Firebase
     const app = initializeApp(firebaseConfig);
     const analytics = getAnalytics(app);
+    
   </script>
 </body>
 
