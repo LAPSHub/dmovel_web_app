@@ -1,4 +1,4 @@
 {
-    "tag_name": "10",
+    "tag_name": "12",
     "description": "📱 App: dmovelapp (05b1176f-2bb9-4f8d-bd67-d024447dd790)\n📦 Release Version: 1.0.0+11\n🕹️ Platform: android\n🐦 Flutter 3.22.3\n🐦 Shorebird 1.1.27 • git@github.com:shorebirdtech/shorebird.git\n\nIncludes Shorebird;\nIncludes icon launcher;\nIncludes translate for en, pt, br;\nIncludes Change Theme (Light, Dark and System)."
 }
