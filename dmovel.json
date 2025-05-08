@@ -1,4 +1,4 @@
 {
-    "tag_name": "10",
-    "description": "📱 App: dmovelapp (05b1176f-2bb9-4f8d-bd67-d024447dd790)\n📦 Release Version: 1.0.0+10\n🕹️ Platform: android\n🐦 Flutter 3.22.3\n🐦 Shorebird 1.1.27 • git@github.com:shorebirdtech/shorebird.git\n\nIncludes Shorebird;\nIncludes icon launcher;\nIncludes translate for en, pt, br;\nIncludes Change Theme (Light, Dark and System)."
+    "tag_name": "12",
+    "description": "📱 App: dmovelapp (05b1176f-2bb9-4f8d-bd67-d024447dd790)\n📦 Release Version: 1.0.0+12\n🕹️ Platform: android\n🐦 Flutter Version: 3.29.3 (7c1c25e48e)\n🐦 Shorebird 1.1.27 • git@github.com:shorebirdtech/shorebird.git\n\nÚltimas alterações:\n1. Update pubspec.yaml\n2. Corrige tradução \"Avaliações filtradas\" para o idioma English\n3. Atualiza versões das dependências permission_handler e geolocator; adiciona custom_adaptive_scaffold\n4. Corrige bug de tradução ao filtrar avaliações\n5. Corrige erro de RenderFlex overflow quando o idioma Deutsch está selecionado\n6. Corrige labels para iniciarem em minúsculo\n7. Adiciona tradução para label \"Avalie agora\"\n8. Substitui home_poi_list_view map dos arquivos de tradução\n9. Ajusta tamanho da imagem\n10. Resolve conflito de código"
 }
