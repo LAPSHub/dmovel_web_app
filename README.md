@@ -41,19 +41,6 @@ Dica: adicione o atalho na tela inicial do celular (PWA) para usabilidade tipo a
 
 ---
 
-### macOS
-
-- [Runner.app.zip (105 MB)](https://github.com/LAPSHub/dmovel_web_app/releases/download/last_version/Runner.app.zip)
-
----
-
-### Código-fonte
-
-- [last_version.zip](https://github.com/LAPSHub/dmovel_web_app/archive/refs/tags/last_version.zip)
-- [last_version.tar.gz](https://github.com/LAPSHub/dmovel_web_app/archive/refs/tags/last_version.tar.gz)
-
----
-
 ## ℹ️ Observações Importantes
 
 - **Sempre utilize a página de [Releases](https://github.com/LAPSHub/dmovel_web_app/releases) para obter a versão mais atualizada e confiável.**
