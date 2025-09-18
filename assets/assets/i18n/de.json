@@ -1,0 +1,929 @@
+{
+    "localization": {
+        "title": "Standortberechtigung",
+        "description": "Um Orte in der Nähe anzuzeigen, aktivieren Sie den Standort Ihres Geräts."
+    },
+    "update_dialog": {
+        "title": "Neue Aktualisierung gefunden",
+        "subtitle": "Eine neue Version von DMovel ist verfügbar. Möchten Sie jetzt aktualisieren?",
+        "update_button": "Aktualisieren",
+        "cancel_button": "Abbrechen",
+        "minimize_button": "Minimieren",
+        "starting_download": "Download wird gestartet...",
+        "completed_download": "Download abgeschlossen! Installation läuft...",
+        "download_error": "Fehler beim Herunterladen des Updates",
+        "install_ready": "Download abgeschlossen! Klicken Sie zur Installation"
+    },
+    "app_update": {
+        "check_updates": "Nach Updates suchen",
+        "already_updated": "Ihre App ist bereits aktuell!",
+        "status_unknown": "Update-Status unbekannt",
+        "update_available": "Update verfügbar",
+        "up_to_date": "App ist aktuell"
+    },
+    "app_drawer": {
+        "header": "Schnelleinstellungen"
+    },
+    "theme": {
+        "title": "Design",
+        "change": "Thema ändern",
+        "light": "Hell",
+        "dark": "Dunkel",
+        "system": "System",
+        "choose_theme": "Wählen Sie ein Thema",
+        "cancel": "Abbrechen",
+        "ok": "OK"
+    },
+    "button": {
+        "cancel": "Abbrechen",
+        "change_language": "Sprache ändern",
+        "ok": "OK",
+        "save": "Speichern",
+        "edit": "Bearbeiten",
+        "delete": "Löschen",
+        "add": "Hinzufügen",
+        "back": "Zurück",
+        "next": "Weiter",
+        "finish": "Fertigstellen",
+        "login": "Anmelden",
+        "register": "Registrieren",
+        "logout": "Abmelden",
+        "confirm": "Bestätigen",
+        "send": "Senden",
+        "resend": "Erneut senden",
+        "retry": "Erneut versuchen",
+        "close": "Schließen",
+        "yes": "Ja",
+        "no": "Nein"
+    },
+    "bottom_nav_bar": {
+        "home": "Startseite",
+        "map": "Karte",
+        "profile": "Profil"
+    },
+    "language": {
+        "name": {
+            "en": "Englisch",
+            "pt": "Portugiesisch",
+            "de": "Deutsch"
+        },
+        "selected_message": "Die aktuell ausgewählte Sprache ist {language}",
+        "selection": {
+            "message": "Bitte wählen Sie eine Sprache aus der Liste aus",
+            "title": "Sprachauswahl"
+        }
+    },
+    "logo_screen": {
+        "logo_screen": {
+            "server_error": "Es ist ein Serverfehler aufgetreten",
+            "exception": "Es ist ein Fehler aufgetreten: ",
+            "error": "Es ist ein Fehler aufgetreten: "
+        },
+        "snackbar": {
+            "close": "Schließen"
+        },
+        "navigation": {
+            "main": "/haupt",
+            "sign_in": "/anmelden"
+        }
+    },
+    "sign_in_screen": {
+        "alert_dialog": {
+            "forgot_password": "Passwort vergessen",
+            "insert_email": "Geben Sie Ihre E-Mail-Adresse ein, um einen Bestätigungscode zu erhalten.",
+            "back": "Zurück",
+            "send": "Senden",
+            "verify_account": "Überprüfen Sie Ihr Konto",
+            "insert_code": "Geben Sie den Code ein, der an Ihre E-Mail gesendet wurde.",
+            "try_again": "Wenn Sie den Code nicht erhalten haben, kehren Sie zum vorherigen Bildschirm zurück und versuchen Sie es erneut.",
+            "confirm": "Bestätigen",
+            "choose_new_password": "Wählen Sie ein neues Passwort",
+            "insert_new_password": "Geben Sie Ihr neues Passwort ein",
+            "confirm_new_password": "Bestätigen Sie Ihr neues Passwort",
+            "cancel": "Abbrechen"
+        },
+        "auto_login": {
+            "server_error": "Es ist ein Serverfehler aufgetreten",
+            "exception": "Es ist ein Fehler aufgetreten: ",
+            "error": "Es ist ein Fehler aufgetreten: "
+        },
+        "login_screen": {
+            "login_to_account": "Melden Sie sich bei Ihrem DMovel-Konto an",
+            "email_address": "E-Mail-Adresse",
+            "your_email": "Ihre E-Mail",
+            "password": "Passwort",
+            "your_password": "Ihr Passwort",
+            "forgot_password": "Passwort vergessen?",
+            "click_here": " Hier klicken",
+            "login": "Anmelden",
+            "or": "Oder...",
+            "no_account": "Sie haben noch kein Konto?",
+            "register_here": " Hier registrieren",
+            "invalid_email": "Ungültige E-Mail!",
+            "empty_fields": "Füllen Sie alle Felder aus!",
+            "passwords_not_match": "Passwörter stimmen nicht überein!",
+            "password_changed": "Passwort erfolgreich geändert!"
+        }
+    },
+    "sign_up_screen": {
+        "sign_up": {
+            "welcome_message": "Hallo! Willkommen bei DMovel",
+            "email_address": "E-Mail-Adresse",
+            "email_hint": "Ihre E-Mail",
+            "full_name": "Vollständiger Name",
+            "name_hint": "Ihr vollständiger Name",
+            "register_email": "Registrierungs-E-Mail",
+            "or_message": "Oder...",
+            "already_have_account": "Sie haben bereits ein Konto?",
+            "login_here": " Hier anmelden",
+            "confirmation_code_sent": "Wir haben Ihnen einen Code gesendet",
+            "confirmation_code_message": "Dieser Code ist erforderlich, um zu bestätigen, dass die E-Mail {email} Ihnen gehört.",
+            "confirmation_code": "Bestätigungscode",
+            "confirmation_code_hint": "Geben Sie den Code ein",
+            "password_choice": "Wählen Sie ein Passwort",
+            "password_message": "Das Passwort muss mindestens 8 Zeichen lang sein.",
+            "password": "Passwort",
+            "confirm_password": "Passwort bestätigen",
+            "address": "Geben Sie Ihre Adresse ein",
+            "address_message": "Das Passwort muss mindestens 8 Zeichen lang sein.",
+            "disability": "Haben Sie eine Behinderung?",
+            "select_disability": "Behinderung auswählen",
+            "next": "Weiter",
+            "register": "Registrieren",
+            "name_empty": "Geben Sie Ihren Namen ein",
+            "invalid_email": "Bitte geben Sie eine gültige E-Mail-Adresse ein"
+        },
+        "alert_dialog": {
+            "cancel_account_creation": "Sind Sie sicher, dass Sie die Kontoerstellung abbrechen möchten?",
+            "yes_cancel": "Ja, abbrechen",
+            "no_continue": "Nein, weiter erstellen"
+        },
+        "disability_dropdown": {
+            "no": "Nein",
+            "disabilities": "Behinderung(en)",
+            "mental_disorders": "Psychische Störung(en)",
+            "learning_disorders": "Lernstörung(en)",
+            "genetic_syndromes": "Genetisches Syndrom(e)"
+        },
+        "app_bar": {
+            "creating_account": "Konto wird erstellt",
+            "step": "Schritt"
+        },
+        "snackbar": {
+            "server_error": "Es ist ein Serverfehler aufgetreten!",
+            "exception": "Es ist eine Ausnahme aufgetreten: ",
+            "error": "Es ist ein Fehler aufgetreten: "
+        },
+        "warning_message": {
+            "passwords_not_match": "Die Passwörter stimmen nicht überein",
+            "password_too_short": "Das Passwort muss mindestens 8 Zeichen lang sein",
+            "confirm_password_empty": "Die Bestätigung des Passworts darf nicht leer sein",
+            "password_empty": "Das Passwort darf nicht leer sein",
+            "district_empty": "Geben Sie den Stadtteil ein, in dem Sie wohnen",
+            "city_empty": "Wählen Sie die Stadt, in der Sie wohnen",
+            "state_empty": "Wählen Sie das Bundesland, in dem Sie wohnen",
+            "disability_empty": "Wählen Sie eine Behinderungsoption aus",
+            "this_is": "Das ist es",
+            "finish_register": "Registrierung abgeschlossen!"
+        }
+    },
+    "category_filtered_screen": {
+        "no_places_message": "Hoppla! Es scheint keine Orte in der Kategorie \"{title}\" zu geben :(",
+        "register_new_place": "Neuen Ort registrieren",
+        "all_results_seen": "Sie haben alle Suchergebnisse gesehen...",
+        "check_internet_connection": "Überprüfen Sie Ihre Internetverbindung und versuchen Sie es erneut!"
+    },
+    "favorites_screen": {
+        "app_bar": {
+            "title": "Favoriten"
+        },
+        "favorites_screen": {
+            "no_favorites_message": "Sie haben noch keine Favoriten!",
+            "error_message": "Entschuldigung, beim Laden Ihrer Favoritenliste ist ein Fehler aufgetreten."
+        },
+        "error": {
+            "loading_list": "Fehler beim Laden der Liste"
+        }
+    },
+    "home_screen": {
+        "order_list": {
+            "most_recent": "Neueste",
+            "oldest": "Älteste",
+            "closest": "Nächste (20 km)",
+            "highest_accessibility": "Höchste Zugänglichkeit",
+            "lowest_accessibility": "Niedrigste Zugänglichkeit"
+        },
+        "category_list": {
+            "favorites": "Favoriten",
+            "leisure": "Freizeit",
+            "health": "Gesundheit",
+            "education": "Bildung",
+            "government": "Regierung",
+            "others": "Andere"
+        },
+        "no_nearby_locations": "Es gibt keine Orte in Ihrer Nähe!",
+        "no_locations_yet": "Es sind noch keine Orte registriert :(",
+        "all_locations_viewed": "Sie haben alle registrierten Orte angesehen...",
+        "location_permission_needed": "Um diese Funktion zu nutzen, müssen Sie uns die Erlaubnis geben, auf den Standort Ihres Geräts zuzugreifen! Bitte versuchen Sie es erneut.",
+        "set_permission_on_settings": "Standortberechtigung dauerhaft verweigert. Sie müssen die Berechtigung in den Einstellungen Ihres Geräts gewähren.",
+        "check_internet_connection": "Überprüfen Sie Ihre Internetverbindung und versuchen Sie es erneut!",
+        "location_disabled": "Standort des Geräts ist deaktiviert. Versuchen Sie, es zu aktivieren.",
+        "location_unavailable": "Der Ortungsdienst ist nicht verfügbar.",
+        "try_again": "Erneut versuchen",
+        "open_settings": "Einstellungen öffnen",
+        "add_location": "Ort hinzufügen",
+        "categories": "Kategorien",
+        "locations": "Orte"
+    },
+    "profile_screen": {
+        "app_bar": {
+            "title": "logo_dmovel.png"
+        },
+        "profile_options": {
+            "registered_places": "Registrierte Orte",
+            "accessibility_ratings": "Zugänglichkeitsbewertungen",
+            "account_security": "Kontosicherheit",
+            "logout": "Abmelden",
+            "sub_title": "E-Mail, Passwort"
+        },
+        "edit_button": {
+            "text": "Bearbeiten"
+        },
+        "user_info": {
+            "address_icon": "pin_drop",
+            "disability_icon": "accessibility_new",
+            "user": "Benutzer ",
+            "no_disability": "ohne Behinderung",
+            "with_disability": "mit "
+        },
+        "retry_button": {
+            "text": "Erneut versuchen"
+        },
+        "logout_dialog": {
+            "title": "Möchten Sie sich wirklich abmelden?",
+            "exit": "Abmelden"
+        }
+    },
+    "search_screen": {
+        "app_bar": {
+            "title": "Suche"
+        },
+        "text_field": {
+            "hint": "Z. B. UFPA Aussichtspunkt"
+        },
+        "empty_search_result": {
+            "message": "Hoppla! Es scheint, dass dieser Ort noch nicht registriert ist :(",
+            "button": "Neuen Ort registrieren"
+        },
+        "search_result": {
+            "end_message": "Sie haben alle Suchergebnisse gesehen...",
+            "not_found_message": "Den gewünschten Ort nicht gefunden?",
+            "button": "Neuen Ort registrieren"
+        },
+        "error_message": {
+            "no_internet": "Überprüfen Sie Ihre Internetverbindung und versuchen Sie es erneut!"
+        },
+        "empty_search_field": {
+            "message": "Geben Sie den Namen des Ortes ein, den Sie suchen möchten!"
+        }
+    },
+    "add_poi_desc": {
+        "category_list": {
+            "leisure": "Freizeit",
+            "health": "Gesundheit",
+            "education": "Bildung",
+            "government": "Regierung",
+            "others": "Andere"
+        },
+        "app_bar": {
+            "title": "Ort hinzufügen"
+        },
+        "poi_address": {
+            "icon": "Standort-Symbol"
+        },
+        "poi_image": {
+            "button": "Tippen Sie hier, um ein Bild auszuwählen"
+        },
+        "poi_name": {
+            "label": "Ortsname",
+            "hint": "Z. B. UFPA Aussichtspunkt"
+        },
+        "poi_category": {
+            "label": "Ortskategorie"
+        },
+        "poi_description": {
+            "label": "Beschreibung",
+            "hint": "Eine kurze Beschreibung des Ortes, um ihn leichter identifizieren zu können."
+        },
+        "buttons": {
+            "cancel": "Abbrechen",
+            "save": "Speichern",
+            "saving": "Speichern..."
+        },
+        "snackbar": {
+            "no_image_selected": "Kein Bild ausgewählt",
+            "exception_occurred": "Es ist ein Fehler aufgetreten: ",
+            "no_image_selected1": "Kein Bild ausgewählt",
+            "null": "Leeres Feld für Name oder Beschreibung",
+            "no_category_selected": "Kategorie nicht ausgewählt",
+            "upload_erro": "Fehler beim Hochladen des Bildes",
+            "add_local": "Ort erfolgreich hinzugefügt!",
+            "first_avaliation": "Seien Sie der Erste, der bewertet, indem Sie auf die Schaltfläche Ort bewerten klicken!"
+        }
+    },
+    "add_poi_location": {
+        "app_bar": {
+            "title": "Ort hinzufügen"
+        },
+        "alert_dialog": {
+            "title": "Ort bereits registriert",
+            "content": "Der ausgewählte Ort wurde bereits registriert",
+            "close_button": "Schließen"
+        },
+        "text_field": {
+            "title": "Adresse suchen",
+            "hint": "Z. B. UFPA Aussichtspunkt"
+        },
+        "button": {
+            "search": "Suchen",
+            "searching": "Suchen...",
+            "search_map": "Auf der Karte suchen"
+        },
+        "search_results": {
+            "address_not_found": "Den Ort nicht gefunden?"
+        },
+        "error_messages": {
+            "no_location_found": "Es konnte kein Ort mit diesen Informationen gefunden werden. Versuchen Sie, weitere Details wie die Stadt, in der er sich befindet, hinzuzufügen.",
+            "exception": "Es ist ein Fehler aufgetreten: ",
+            "error": "Es ist ein Fehler aufgetreten: "
+        }
+    },
+    "add_poi_map": {
+        "app_bar": {
+            "title": "Ort hinzufügen"
+        },
+        "button": {
+            "confirm": "Bestätigen"
+        },
+        "map": {
+            "info_window": {
+                "snippet": "Tippen Sie hier, um mehr zu sehen"
+            }
+        },
+        "error_messages": {
+            "too_close": "Zu nah an einem anderen Ort!"
+        }
+    },
+    "rate_poi": {
+        "app_bar": {
+            "edit_rating": "Bewertung bearbeiten",
+            "add_rating": "Bewertung hinzufügen"
+        },
+        "button": {
+            "cancel": "Abbrechen"
+        },
+        "text": {
+            "your_opinion_about": "Ihre Meinung über",
+            "here_you_should_rate": "Hier sollten Sie Bewertungen von 1 bis 5 für den Ort abgeben, entsprechend den folgenden Merkmalen:",
+            "physical_mobility": "Körperliche Mobilität: ",
+            "signaling": "Beschilderung: ",
+            "service": "Service: ",
+            "comment_about_the_place": "Wenn Sie möchten, geben Sie einen kurzen Kommentar zum Ort ab:",
+            "example_comment": "Z. B.: Aufzug 2 funktioniert nicht!"
+        },
+        "snackbar": {
+            "msg": "Bitte bewerten Sie jede Eigenschaft des Ortes"
+        },
+        "rating": {
+            "physical_mobility": {
+                "zero": "Bewertung der körperlichen Mobilität nicht definiert.",
+                "one": "Bewertung der körperlichen Mobilität ist 1.",
+                "two": "Bewertung der körperlichen Mobilität ist 2.",
+                "other": "Bewertung der körperlichen Mobilität ist {{value}}."
+            },
+            "signaling": {
+                "zero": "Beschilderungsbewertung nicht definiert.",
+                "one": "Beschilderungsbewertung ist 1.",
+                "two": "Beschilderungsbewertung ist 2.",
+                "other": "Beschilderungsbewertung ist {{value}}."
+            },
+            "service": {
+                "zero": "Servicebewertung nicht definiert.",
+                "one": "Servicebewertung ist 1.",
+                "two": "Servicebewertung ist 2.",
+                "other": "Servicebewertung ist {{value}}."
+            }
+        },
+        "title": "Was möchten Sie bewerten?",
+        "refresh_error": "Fehler beim Aktualisieren der Fragen"
+    },
+    "show_poi": {
+        "show_poi_screen": {
+            "server_error": "Entschuldigung, es gab ein Problem mit dem Server",
+            "exception": "Ausnahme: ",
+            "error": "Fehler: ",
+            "server_problem": "Es ist ein Problem auf dem Server aufgetreten",
+            "favorite_error": "Fehler beim Hinzufügen zu Favoriten",
+            "server_error_exclamation": "Serverfehler!"
+        },
+        "filter": {
+            "title": "Filtern",
+            "order_by": "Sortieren nach",
+            "most_recent": "Neueste",
+            "oldest": "Älteste",
+            "highest_accessibility": "Höchste Bewertung",
+            "lowest_accessibility": "Niedrigste Bewertung",
+            "review": "Bewertung",
+            "clear_filters": "Filter zurücksetzen"
+        },
+        "screen": {
+            "title": "Ort",
+            "register_in": "Registriert am",
+            "reviews": "Bewertungen ",
+            "filted": "gefiltert ",
+            "filter": "Filtern",
+            "no_reviews": "Es gibt noch keine Bewertungen für diesen Ort...",
+            "be_the_first": "Seien Sie der Erste, der bewertet!",
+            "rate_poi": "Ort bewerten",
+            "loading": "Wird geladen...",
+            "description": "Beschreibung",
+            "services": "Dienstleistungen",
+            "reviews_title": "Bewertungen",
+            "view_more": "Mehr anzeigen",
+            "translate": "Übersetzen",
+            "translating": "Übersetzen...",
+            "translation_error": "Fehler beim Übersetzen der Beschreibung",
+            "favorite_error": "Fehler beim Hinzufügen des Ortes zu Favoriten",
+            "general_score": "Gesamtpunktzahl",
+            "Espaço e Mobilidade": "Raum und Mobilität",
+            "Sinalização e Comunicação": "Beschilderung und Kommunikation",
+            "Experiência do Usuário": "Benutzererfahrung",
+            "very_accessible": "Sehr zugänglich",
+            "accessible": "Zugänglich",
+            "neutral": "Neutral",
+            "little_accessible": "Wenig zugänglich",
+            "not_accessible": "Nicht zugänglich",
+            "search_placeholder": "Suche nach bestimmten Elementen (z. B. Rampen, Gebärdensprache, Braille)",
+            "filter_by": "Bewertet von...",
+            "most_recent": "Neueste",
+            "highest_rating": "Höchste Bewertung",
+            "lowest_rating": "Niedrigste Bewertung",
+            "applied_reviews": "angewendete Bewertungen",
+            "no_reviews_available": "Keine Bewertungen verfügbar",
+            "does_not_exist": "Nicht vorhanden",
+            "not_noticed": "Nicht bemerkt",
+            "exists": "Vorhanden",
+            "bathroom_accessibility_resources": "Barrierefreiheitsmerkmale des Badezimmers",
+            "mobility_resources_perceived": "Wahrgenommene Mobilitätsmerkmale am Ort",
+            "support_bar": "Haltegriff",
+            "wide_doors": "Breite Türen",
+            "sufficient_maneuvering_area": "Ausreichende Bewegungsfläche",
+            "ramps": "Rampen",
+            "handrail": "Handlauf",
+            "elevators": "Aufzüge",
+            "user_comments": "Benutzerkommentare",
+            "address_not_available": "Adresse nicht verfügbar",
+            "like_error": "Fehler beim Liken des Kommentars",
+            "refresh_error": "Fehler beim Aktualisieren der Informationen"
+        },
+        "filter_section": {
+            "title": "Titel"
+        },
+        "filter_order_by_item": {
+            "title": "Titel"
+        },
+        "filter_rating_item": {
+            "stars": "Sterne"
+        }
+    },
+    "my_pois": {
+        "app_bar": {
+            "title": "Registrierte Orte"
+        },
+        "error_messages": {
+            "load_error": "Fehler beim Laden der Liste",
+            "no_places": "Sie haben noch keine Orte registriert!",
+            "fetch_error": "Entschuldigung, beim Laden Ihrer registrierten Orte ist ein Fehler aufgetreten."
+        }
+    },
+    "my_ratings": {
+        "my_ratings_screen": {
+            "app_bar_title": "Meine Bewertungen",
+            "no_ratings_message": "Sie haben noch keine Orte bewertet!",
+            "server_error_message": "Entschuldigung, es gab ein Problem mit dem Server",
+            "exception_message": "Ausnahme: ",
+            "error_message": "Fehler: ",
+            "loading_error_message": "Entschuldigung, beim Laden Ihrer Bewertungsliste ist ein Fehler aufgetreten."
+        },
+        "rating_item": {
+            "rating": {
+                "average": "Durchschnittliche Bewertung"
+            }
+        }
+    },
+    "account_security_screen": {
+        "app_bar_title": "Kontosicherheit",
+        "change_email_button": "E-Mail ändern",
+        "change_password_button": "Passwort ändern"
+    },
+    "edit_email": {
+        "edit_email_screen": {
+            "title": "E-Mail ändern",
+            "new_email_prompt": "Geben Sie Ihre neue E-Mail-Adresse ein",
+            "password_prompt": "Geben Sie Ihr Passwort ein",
+            "confirmation_code_prompt": "Geben Sie den Bestätigungscode ein",
+            "continue_button": "Weiter",
+            "save_button": "Speichern"
+        },
+        "validation_messages": {
+            "empty_password": "Sie müssen Ihr Passwort bestätigen!",
+            "invalid_email": "Bitte geben Sie eine gültige E-Mail-Adresse ein",
+            "empty_email": "Geben Sie Ihre neue E-Mail-Adresse ein",
+            "server_error": "Es gab einen Fehler auf dem Server!",
+            "exception_error": "Es ist ein Fehler aufgetreten: ",
+            "error": "Es ist ein Fehler aufgetreten: "
+        },
+        "api_calls": {
+            "change_email": "auth/changeEmail",
+            "confirm_change_email": "auth/confirmChangeEmail"
+        },
+        "success_messages": {
+            "success": "Erfolgreich!",
+            "new_email_instruction": "Um sich in Ihr Konto einzuloggen, müssen Sie die E-Mail-Adresse verwenden "
+        }
+    },
+    "edit_password": {
+        "edit_password_screen": {
+            "title": "Passwort ändern",
+            "old_password_prompt": "Geben Sie Ihr aktuelles Passwort ein",
+            "new_password_prompt": "Geben Sie Ihr neues Passwort ein",
+            "confirm_new_password_prompt": "Bestätigen Sie Ihr neues Passwort",
+            "save_button": "Speichern"
+        },
+        "validation_messages": {
+            "password_mismatch": "Stellen Sie sicher, dass Ihr neues Passwort in beiden Feldern übereinstimmt!",
+            "empty_confirm_password": "Sie müssen Ihr neues Passwort bestätigen!",
+            "empty_new_password": "Sie müssen Ihr neues Passwort eingeben!",
+            "empty_old_password": "Sie müssen Ihr aktuelles Passwort eingeben!",
+            "server_error": "Es gab einen Fehler auf dem Server!",
+            "exception_error": "Es ist ein Fehler aufgetreten: ",
+            "error": "Es ist ein Fehler aufgetreten: "
+        },
+        "api_calls": {
+            "change_password": "auth/changePassword"
+        },
+        "success_messages": {
+            "success": "Passwortänderung erfolgreich!"
+        }
+    },
+    "edit_address": {
+        "title": "Adresse bearbeiten",
+        "save": "Speichern",
+        "warning": {
+            "empty_fields": "Die Felder Bundesland, Stadt und/oder Bezirk dürfen nicht leer gelassen werden, bitte stellen Sie sicher, dass alle ausgefüllt sind."
+        },
+        "error": {
+            "server_error": "Es gab einen Fehler auf dem Server!",
+            "exception": "Es ist eine Ausnahme aufgetreten: ",
+            "error": "Es ist ein Fehler aufgetreten: "
+        },
+        "success": {
+            "address_changed": "Sie haben Ihre Adresse geändert!"
+        }
+    },
+    "edit_avatar": {
+        "edit_avatar_screen": {
+            "no_image_selected": "Kein Bild ausgewählt",
+            "exception_occurred": "Es ist eine Ausnahme aufgetreten: ",
+            "error_occurred": "Es ist ein Fehler aufgetreten: ",
+            "no_changes_made": "Keine Änderungen vorgenommen.",
+            "server_error": "Entschuldigung, es gab einen Fehler auf dem Server :(",
+            "exception": "Es ist eine Ausnahme aufgetreten: ",
+            "error": "Es ist ein Fehler aufgetreten: "
+        },
+        "title": "Profilbild bearbeiten",
+        "choose_new_photo": "Wählen Sie ein neues Foto",
+        "remove_photo": "Foto entfernen",
+        "save": "Speichern"
+    },
+    "edit_disability": {
+        "edit_disability_screen": {
+            "title": "Behinderung bearbeiten",
+            "question": "Haben Sie eine Behinderung?",
+            "save_button": "Speichern",
+            "success_message": "Änderung der Behinderung erfolgreich!",
+            "server_error": "Es gab einen Fehler auf dem Server!",
+            "exception_message": "Es ist eine Ausnahme aufgetreten: ",
+            "error_message": "Es ist ein Fehler aufgetreten: "
+        },
+        "disability_options": {
+            "no": "Nein",
+            "disabilities": "Behinderung(en)",
+            "mental_disorders": "Geistige Störung(en)",
+            "learning_disorders": "Lernstörung(en)",
+            "genetic_syndromes": "Genetische Syndrom(e)"
+        }
+    },
+    "edit_name_screen": {
+        "title": "Name bearbeiten",
+        "input_label": "Geben Sie Ihren Namen ein",
+        "save_button": "Speichern",
+        "success_message": "Namensänderung erfolgreich!",
+        "server_error": "Es gab einen Fehler auf dem Server!",
+        "exception_message": "Es ist eine Ausnahme aufgetreten: ",
+        "error_message": "Es ist ein Fehler aufgetreten: ",
+        "empty_name_warning": "Ihr Name darf nicht leer sein!"
+    },
+    "edit_profile_screen": {
+        "app_bar_title": "Profil bearbeiten",
+        "question": "Was möchten Sie bearbeiten?",
+        "button": {
+            "profile_picture": "Profilbild",
+            "name": "Name",
+            "address": "Adresse",
+            "disability": "Behinderung"
+        }
+    },
+    "add_poi_placesearch_listview": {
+        "search_results_screen": {
+            "registered_location": "(REGISTRIERTER ORT)\n",
+            "progress_indicator": {
+                "color": "Grau 400",
+                "background_color": "Grau 500"
+            }
+        },
+        "navigation": {
+            "add_poi_desc": "/add_poi_desc"
+        }
+    },
+    "google_sign_in_button": {
+        "sign_in_failed": "Anmeldung fehlgeschlagen",
+        "register_with_google": "Registrieren Sie sich mit Google",
+        "sign_in_with_google": "Melden Sie sich mit Google an",
+        "security_code_not_confirmed": "Sicherheitscode nicht bestätigt",
+        "server_error": "Serverfehler!",
+        "exception_occurred": "Es ist eine Ausnahme aufgetreten: ",
+        "error_occurred": "Es ist ein Fehler aufgetreten: ",
+        "close": "Schließen"
+    },
+    "poi_view": {
+            "no_permission": "Keine Berechtigung",
+            "no_reviews": "Keine Bewertungen",
+      "reviews": "bewertungen",
+      "review": "bewertung",
+      "rate_now": "Bewerte jetzt",
+            "km": "km"
+    },
+    "poi_ratings_listview": {
+        "delete_rating": {
+            "server_error": "Serverfehler!",
+            "exception": "Ausnahme: ",
+            "error": "Fehler: "
+        },
+        "confirm_dialog": {
+            "title": "Möchten Sie wirklich löschen?",
+            "irreversible_action": "Diese Aktion ist unwiderruflich.",
+            "delete": "Löschen",
+            "cancel": "Abbrechen"
+        },
+        "months": {
+            "jan": "Jan",
+            "feb": "Feb",
+            "mar": "Mär",
+            "apr": "Apr",
+            "may": "Mai",
+            "jun": "Jun",
+            "jul": "Jul",
+            "aug": "Aug",
+            "sep": "Sep",
+            "oct": "Okt",
+            "nov": "Nov",
+            "dec": "Dez"
+        },
+        "ratings": {
+            "physical_mobility": "Körperliche Mobilität",
+            "signage": "Beschilderung",
+            "service": "Service"
+        },
+        "edited_times": {
+            "once": "einmal",
+            "multiple": "mal"
+        },
+        "edited": "Bearbeitet",
+        "rated_on": "Bewertet am ",
+        "translate_button": {
+            "text": "Übersetzen"
+        },
+        "show_original_button": {
+            "text": "Original anzeigen"
+        },
+        "try_again_button": {
+            "text": "Nochmal versuchen"
+        },
+        "translation_error_message": "Es ist ein Fehler bei der Übersetzung aufgetreten, bitte versuchen Sie es erneut"
+    },
+    "address_form": {
+        "select_your_country": "Wählen Sie Ihr Land",
+        "select_your_state": "Wählen Sie Ihr Bundesland",
+        "select_your_city": "Wählen Sie Ihre Stadt",
+        "enter_your_district": "Geben Sie Ihren Bezirk ein",
+        "postal_code": "Geben Sie Ihre PLZ ein",
+        "postal_code_not_found": "PLZ nicht gefunden",
+        "optional": "Optional",
+        "or": "Oder",
+        "code_text_field": {
+            "text_hint": "PLZ",
+            "country": "Land",
+            "state": "Bundesland",
+            "city": "Stadt",
+            "district": "Bezirk"
+        }
+    },
+    "select_search_dialog": {
+        "invalid_search_type": "Wählen Sie einen gültigen Suchtyp",
+        "select_country": "Wählen Sie Ihr Land",
+        "select_state": "Wählen Sie Ihr Bundesland",
+        "select_city": "Wählen Sie Ihre Stadt",
+        "search_hint": "Hier suchen",
+        "no_search_results": "Keine Ergebnisse für Ihre Suche gefunden.",
+        "error_loading_list": "Fehler beim Laden der Liste, bitte versuchen Sie es später erneut."
+    },
+    "show_message": {
+        "snackbar": {
+            "close": "Schließen"
+        }
+    },
+    "show_warning": {
+        "ok_button": "Ok"
+    },
+    "search_local": {
+        "search_local": "Ort suchen",
+        "search_hint": "Geben Sie den Ortsnamen ein",
+        "poi_snippet": "Hier tippen, um mehr zu sehen"
+    },
+    "app_name": "DMovel",
+    "common": {
+        "loading_question": "Laden...",
+        "loading": "Wird geladen...",
+        "saving": "Wird gespeichert...",
+        "error": "Fehler",
+        "success": "Erfolg",
+        "warning": "Warnung",
+        "info": "Information",
+        "coming_soon": "Demnächst verfügbar",
+        "email": "E-Mail",
+        "password": "Passwort",
+        "name": "Name",
+        "description": "Beschreibung",
+        "address": "Adresse",
+        "optional": "Optional",
+        "try_again": "Erneut versuchen"
+    },
+    "error": {
+        "server_error": "Serverfehler. Bitte versuchen Sie es später erneut.",
+        "network_error": "Netzwerkfehler. Bitte überprüfen Sie Ihre Verbindung.",
+        "invalid_input": "Ungültige Eingabe.",
+        "required_field": "Pflichtfeld.",
+        "invalid_email": "Ungültige E-Mail.",
+        "password_too_short": "Passwort zu kurz (mindestens 6 Zeichen).",
+        "passwords_do_not_match": "Passwörter stimmen nicht überein.",
+        "unknown_error": "Ein unbekannter Fehler ist aufgetreten.",
+        "exception": "Ausnahme: ",
+        "user_data_missing": "Fehler beim Laden der Benutzerdaten. Bitte erneut anmelden.",
+        "user_data_corrupted": "Benutzerdaten beschädigt. Bitte erneut anmelden.",
+        "user_not_logged_in": "Benutzer nicht angemeldet. Bitte anmelden, um fortzufahren.",
+        "user_data_missing_try_again": "Benutzerdaten nicht gefunden. Bitte versuchen Sie, neu zu laden.",
+        "poi_data_missing": "Daten des Ortes von Interesse nicht gefunden.",
+        "missing_arguments": "Erforderliche Argumente nicht angegeben."
+    },
+    "login": {
+        "title": "Anmelden",
+        "email_hint": "Geben Sie Ihre E-Mail-Adresse ein",
+        "password_hint": "Geben Sie Ihr Passwort ein",
+        "forgot_password": "Passwort vergessen?",
+        "no_account": "Haben Sie noch kein Konto?",
+        "register_now": "Jetzt registrieren",
+        "login_failed": "Anmeldung fehlgeschlagen. Überprüfen Sie Ihre Anmeldedaten.",
+        "or_continue_with": "Oder weitermachen mit"
+    },
+    "register": {
+        "title": "Registrieren",
+        "name_hint": "Geben Sie Ihren vollständigen Namen ein",
+        "email_hint": "Geben Sie Ihre E-Mail-Adresse ein",
+        "password_hint": "Erstellen Sie ein Passwort",
+        "confirm_password_hint": "Bestätigen Sie Ihr Passwort",
+        "already_have_account": "Haben Sie bereits ein Konto?",
+        "login_now": "Jetzt anmelden",
+        "registration_failed": "Registrierung fehlgeschlagen.",
+        "success": "Registrierung erfolgreich!"
+    },
+    "home": {
+        "search_hint": "Orte suchen...",
+        "nearby_pois": "Orte in der Nähe",
+        "categories": "Kategorien",
+        "view_all": "Alle anzeigen"
+    },
+    "poi": {
+        "address_not_available": "Adresse nicht verfügbar",
+        "ratings": "Bewertungen",
+        "no_ratings": "Noch keine Bewertungen.",
+        "add_rating": "Ort bewerten",
+        "edit_rating": "Bewertung bearbeiten",
+        "report_poi": "Ort melden",
+        "share_poi": "Ort teilen",
+        "directions": "Wegbeschreibung",
+        "call": "Anrufen",
+        "website": "Webseite"
+    },
+    "rating": {
+        "category": {
+            "space_mobility": "Raum und Mobilität",
+            "signaling_communication": "Beschilderung und Kommunikation",
+            "user_experience": "Benutzererfahrung"
+        },
+        "scale": {
+            "very_bad": "Sehr schlecht",
+            "very_good": "Sehr gut",
+            "not_accessible": "Nicht zugänglich",
+            "fully_accessible": "Voll zugänglich",
+            "hard_use": "Schwer zu benutzen",
+            "easy_use": "Einfach zu benutzen"
+        },
+        "bathroom": {
+            "support_bars": "Haltegriffe",
+            "wide_doors": "Breite Türen",
+            "maneuvering_area": "Manövrierbereich",
+            "not_noticed": "Nicht bemerkt",
+            "does_not_exist": "Existiert nicht",
+            "exists": "Existiert"
+        },
+        "add_comment_optional": "Kommentar hinzufügen (optional)",
+        "not_applicable": "Nicht zutreffend / Nicht genutzt",
+        "q1": {
+            "local_accessibility": "Über die Zugänglichkeit des Ortes:"
+        },
+        "q2": {
+            "parking_access": "Über den Zugang zu reservierten Parkplätzen:"
+        },
+        "q3": {
+            "doors_windows_use": "Über die Nutzung von Türen und Fenstern:"
+        },
+        "q4": {
+            "bathroom_features": "Barrierefreiheitsmerkmale des Badezimmers:"
+        },
+        "add_other_features_optional": "Beschreiben Sie andere wahrgenommene Merkmale (optional)",
+        "success_message": "Bewertung erfolgreich gespeichert!",
+        "describe_more": "Beschreiben Sie mehr",
+        "optional": "Optional",
+        "please_answer_at_least_one": "Bitte beantworten Sie mindestens eine Frage, bevor Sie speichern."
+    },
+    "profile": {
+        "title": "Profil",
+        "edit_profile": "Profil bearbeiten",
+        "my_pois": "Meine Orte",
+        "my_ratings": "Meine Bewertungen",
+        "settings": "Einstellungen",
+        "logout": "Abmelden",
+        "confirm_logout_title": "Abmeldung bestätigen",
+        "confirm_logout_message": "Sind Sie sicher, dass Sie sich abmelden möchten?"
+    },
+    "edit_profile": {
+        "title": "Profil bearbeiten",
+        "change_photo": "Foto ändern",
+        "name_label": "Name",
+        "email_label": "E-Mail",
+        "update_success": "Profil erfolgreich aktualisiert!",
+        "update_failed": "Profilaktualisierung fehlgeschlagen."
+    },
+    "settings": {
+        "title": "Einstellungen",
+        "language": "Sprache",
+        "theme": {
+            "light": "Hell",
+            "dark": "Dunkel",
+            "system": "System"
+        },
+        "notifications": "Benachrichtigungen",
+        "about": "Über",
+        "privacy_policy": "Datenschutzrichtlinie",
+        "terms_of_service": "Nutzungsbedingungen"
+    },
+    "add_poi": {
+        "title": "Ort hinzufügen",
+        "step1_title": "Standort",
+        "step2_title": "Beschreibung",
+        "step3_title": "Foto",
+        "search_location": "Suchen oder auf Karte markieren",
+        "poi_name_label": "Name des Ortes",
+        "poi_name_hint": "Bsp.: Beispiel Restaurant",
+        "poi_description_label": "Beschreibung (optional)",
+        "poi_description_hint": "Beschreiben Sie den Ort kurz",
+        "poi_category_label": "Kategorie",
+        "add_photo": "Foto hinzufügen",
+        "take_photo": "Foto aufnehmen",
+        "choose_gallery": "Aus Galerie wählen",
+        "photo_guidelines": "Fotorichtlinien: gute Beleuchtung, Fokus auf den Ort.",
+        "success": "Ort erfolgreich hinzugefügt!",
+        "failed": "Ort konnte nicht hinzugefügt werden."
+    }
+}
