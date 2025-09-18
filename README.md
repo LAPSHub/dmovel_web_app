@@ -10,10 +10,10 @@ Baixe a versão mais recente nas principais plataformas:
 
 ### Android
 
-- [DMovel.apk (35 MB)](https://github.com/LAPSHub/dmovel_web_app/releases/download/last_version/DMovel.apk)  
+- [DMovel.apk](https://github.com/LAPSHub/dmovel_web_app/releases/download/last_version/DMovel.apk)  
   Versão oficial para usuários finais.
 
-- [DMovel-Dev.apk (30.5 MB)](https://github.com/LAPSHub/dmovel_web_app/releases/download/last_version/DMovel-Dev.apk)  
+- [DMovel-Dev.apk]([https://github.com/LAPSHub/dmovel_web_app/releases/download/last_version/DMovel-Dev.apk](https://github.com/LAPSHub/dmovel_web_app/releases/download/v1.0.0%2B12/DMovel-Dev.apk))  
   Versão de desenvolvimento/testes.
 
 Para instalar:  
