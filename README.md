@@ -1,4 +1,4 @@
-# 📱 DMóvel: Sua conexão com o universo LAPSHub!
+# 📱 DMóvel
 
 **Um app, todas as plataformas. Leve o poder do sistema DMóvel para onde você for.**
 
