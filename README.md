@@ -1,56 +1,65 @@
-# DMóvel
+# 📱 DMóvel: Sua conexão com o universo LAPSHub!
 
-**Aplicativo multiplataforma para acesso ao sistema DMóvel do LAPSHub**
-
----
-
-## 🚀 Downloads Rápidos
-
-Baixe a versão mais recente nas principais plataformas:
-
-### Android
-
-- [DMovel.apk](https://github.com/LAPSHub/dmovel_web_app/releases/download/last_version/DMovel.apk)  
-  Versão oficial para usuários finais.
-
-- [DMovel-Dev.apk](https://github.com/LAPSHub/dmovel_web_app/releases/download/v1.0.0%2B12/DMovel-Dev.apk)  
-  Versão de desenvolvimento/testes.
-
-Para instalar:  
-1. Baixe o arquivo `.apk` no seu dispositivo Android.
-2. Clique para instalar (pode ser necessário permitir "fontes desconhecidas").
+**Um app, todas as plataformas. Leve o poder do sistema DMóvel para onde você for.**
 
 ---
 
-### iOS
+## ✨ Comece a usar agora!
 
-- [dmovelapp.ipa (77.2 MB)](https://github.com/LAPSHub/dmovel_web_app/releases/download/last_version/dmovelapp.ipa)
+Escolha sua plataforma e mergulhe de cabeça. A versão mais recente está sempre aqui!
 
-Para instalar em iPhones/iPads:
-- Utilize TestFlight, AltStore, Cydia Impactor ou solução similar.
-- Instalação direta de .ipa requer conta Apple Developer.
-
----
-
-### Web
-
-- [Acesse a versão web do DMóvel](https://lapshub.github.io/dmovel_web_app/)
-
-Utilize diretamente no navegador, no desktop ou no celular.  
-Dica: adicione o atalho na tela inicial do celular (PWA) para usabilidade tipo app.
+| Plataforma | Para quem é? | Link para Download |
+| :---: | :--- | :---: |
+| 🤖 **Android** | Usuários finais (versão estável) | [**`DMovel.apk`**](https://github.com/LAPSHub/dmovel_web_app/releases/download/last_version/DMovel.apk) |
+| 🧑‍💻 **Android (Dev)** | Desenvolvedores e testadores | [**`DMovel-Dev.apk`**](https://github.com/LAPSHub/dmovel_web_app/releases/download/v1.0.0%2B12/DMovel-Dev.apk) |
+| 🍏 **iOS** | Usuários de iPhone/iPad | [**`dmovelapp.ipa`**](https://github.com/LAPSHub/dmovel_web_app/releases/download/last_version/dmovelapp.ipa) |
+| 🌐 **Web** | Todos (acesso instantâneo) | [**Acessar Versão Web**](https://lapshub.github.io/dmovel_web_app/) |
 
 ---
 
-## ℹ️ Observações Importantes
+## 🛠️ Como Instalar? Moleza!
 
-- **Sempre utilize a página de [Releases](https://github.com/LAPSHub/dmovel_web_app/releases) para obter a versão mais atualizada e confiável.**
-- Para iOS, apenas dispositivos autorizados podem instalar .ipa fora da App Store.
-- O app Web funciona em qualquer navegador moderno e permite uso off-line via PWA.
+<details>
+<summary>🤖 <b>Instruções para Android</b></summary>
+
+1. Baixe o arquivo `.apk` desejado no seu celular.
+2. Toque no arquivo para instalar.
+3. Se o sistema pedir, autorize a instalação de "fontes desconhecidas". É seguro!
+
+</details>
+
+<details>
+<summary>🍏 <b>Instruções para iOS</b></summary>
+
+⚠️ **Atenção:** A instalação de apps `.ipa` fora da App Store é restrita pela Apple.
+
+- Você precisará de uma conta **Apple Developer** ou usar ferramentas como **TestFlight**, **AltStore** ou **Cydia Impactor**.
+- Este método é recomendado apenas para usuários avançados ou desenvolvedores.
+
+</details>
+
+<details>
+<summary>🌐 <b>Dica de Ouro para a Versão Web</b></summary>
+
+Acesse a [versão web](https://lapshub.github.io/dmovel_web_app/) e adicione-a à sua tela inicial!
+
+- **No celular:** Parece um app nativo (PWA).
+- **No desktop:** Fica a um clique de distância.
+- **Funciona offline:** Continue usando mesmo sem internet.
+
+</details>
 
 ---
 
-## 💡 Suporte/Dúvidas
+## 💡 Fique por Dentro!
 
-Abra uma *Issue* neste repositório ou entre em contato com a equipe do LAPSHub.
+- **Sempre o mais novo:** Para ter certeza de que está com a última versão, confira nossa página de [**Releases**](https://github.com/LAPSHub/dmovel_web_app/releases). É a fonte mais confiável!
+- **iOS é diferente:** Apenas dispositivos autorizados podem instalar `.ipa` manualmente. Para a maioria dos usuários, a versão Web é a melhor alternativa no ecossistema Apple.
 
 ---
+
+## 🤔 Dúvidas ou Sugestões?
+
+Encontrou um problema ou teve uma ideia incrível? **Sua voz é importante!**
+
+Abra uma [**Issue**](https://github.com/LAPSHub/dmovel_web_app/issues) neste repositório. A equipe do LAPSHub está pronta para ajudar!
