@@ -113,18 +113,17 @@
         },
         "login_screen": {
             "login_to_account": "Entre na sua conta DMovel",
-            "email_address": "Endereço de e-mail",
-            "your_email": "Seu e-mail",
-            "password": "Senha",
-            "your_password": "Sua senha",
             "forgot_password": "Esqueceu sua senha?",
             "click_here": " Clique aqui",
             "login": "Entrar",
-            "or": "Ou...",
+            "or": "Ou",
             "no_account": "Não possui conta?",
             "register_here": " Cadastre aqui",
-            "invalid_email": "Email inválido!",
-            "empty_fields": "Preencha todos os campos!",
+            "invalid_email": "Email inválido",
+            "invalid_password": "A senha deve ter pelo menos 8 caracteres",
+            "empty_email": "Por favor, insira seu email",
+            "empty_password": "Por favor, insira uma senha",
+            "log_in_failed":"E-mail ou senha inválido",
             "passwords_not_match": "Senhas não conferem!",
             "password_changed": "Senha modificada!"
         },
@@ -943,5 +942,69 @@
         "photo_guidelines": "Diretrizes da foto: boa iluminação, foco no local.",
         "success": "Local adicionado com sucesso!",
         "failed": "Falha ao adicionar local."
+    },
+  "server_error": {
+    "error_message": "Ocorreu um erro no servidor"
+  },
+  "email_text_field": {
+    "email_label_text": "Endereço de e-mail",
+    "email_text_hint": "Seu E-mail",
+    "empty_field": "Por favor, insira seu e-mail",
+    "invalid_field": "Por favor, insira um e-mail válido"
+  },
+  "password_text_field": {
+    "password_label_text": "Senha",
+    "password_text_hint": "Sua Senha",
+    "empty_field": "Por favor, insira sua senha.",
+    "invalid_field": "A senha deve ter pelo menos 8 caracteres.",
+    "confirm_password_text_hint": "Confirmar Senha",
+    "new_password_text_hint": "Nova Senha",
+    "confirm_new_password_text_hint": "Confirmar Nova Senha",
+    "mismatch": "As senhas não coincidem"
+  },
+  "rescue_account_screens": {
+    "rescue_account": {
+      "title": "Recuperar Conta",
+      "body": "Insira seu e-mail abaixo para receber um código de verificação.",
+      "button_text": "Próximo"
+    },
+    "verification_code": {
+      "title": "Código de Verificação",
+      "body": "Insira o código enviado para seu e-mail.",
+      "code_not_sent": " Não recebeu? ",
+      "resend_email": "Reenviar e-mail",
+      "button_text": "Próximo"
+    },
+    "setting_new_password": {
+      "title": "Definir Nova Senha",
+      "body": "Insira sua nova senha.",
+      "button_text": "Próximo"
+    },
+    "success": {
+      "title": "Sucesso",
+      "body": "Sua conta foi recuperada. Agora você pode fazer login com sua nova senha.",
+      "button_text": "Fazer login agora"
+    },
+    "failure": {
+      "no_account": "Nenhuma conta associada a este e-mail",
+      "invalid_code": "Código inválido"
+    },
+    "cancellation": {
+      "title": "Confirmar Cancelamento",
+      "body": "Tem certeza de que deseja cancelar o processo de recuperação da conta?"
     }
+  },
+  "code_text_field": {
+    "invalid_field": "O código deve ter 4 dígitos.",
+    "empty_field": "Por favor, insira o código."
+  },
+  "password_tips": {
+    "tips": " Dicas\n\n",
+    "lenght": " Deve ter 8 caracteres\n",
+    "composition": " Inclua números e letras"
+  },
+  "cancellation_dialog": {
+    "continue": "Continuar",
+    "cancel": "Cancelar"
+  }
 }

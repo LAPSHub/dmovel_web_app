@@ -88,20 +88,6 @@
         }
     },
     "sign_in_screen": {
-        "alert_dialog": {
-            "forgot_password": "Forgot my password",
-            "insert_email": "Insert your email below to receive a confirmation code.",
-            "back": "Back",
-            "send": "Send",
-            "verify_account": "Verify your account",
-            "insert_code": "Enter the code sent to your email.",
-            "try_again": "If you haven't received the code, go back to the previous screen and try again.",
-            "confirm": "Confirm",
-            "choose_new_password": "Choose a new password",
-            "insert_new_password": "Insert your new password",
-            "confirm_new_password": "Confirm your new password",
-            "cancel": "Cancel"
-        },
         "auto_login": {
             "server_error": "Server error occurred",
             "exception": "An exception occurred: ",
@@ -109,20 +95,20 @@
         },
         "login_screen": {
             "login_to_account": "Log in to your DMovel account",
-            "email_address": "Email address",
-            "your_email": "Your email",
-            "password": "Password",
-            "your_password": "Your password",
             "forgot_password": "Forgot your password?",
             "click_here": " Click here",
-            "login": "Log in",
-            "or": "Or...",
+            "login": "Log In",
+            "or": "Or",
             "no_account": "Don't have an account?",
             "register_here": " Register here",
-            "invalid_email": "Invalid email!",
-            "empty_fields": "Fill in all fields!",
+            "invalid_email": "Invalid email",
+            "invalid_password": "Password must be at least 8 characters.",
+            "empty_email": "Please enter your email",
+            "empty_password": "Please enter a password",
+            "log_in_failed": "Invalid e-mail or password",
             "passwords_not_match": "Passwords do not match!",
             "password_changed": "Password changed successfully!"
+
         }
     },
     "sign_up_screen": {
@@ -935,5 +921,69 @@
         "photo_guidelines": "Photo guidelines: good lighting, focus on the place.",
         "success": "Place added successfully!",
         "failed": "Failed to add place."
+    },
+  "server_error": {
+    "error_message": "Server error occurred"
+  },
+  "email_text_field": {
+    "email_label_text": "Email address",
+    "email_text_hint": "Your E-mail",
+    "empty_field": "Please enter your e-mail.",
+    "invalid_field": "Please enter a valid e-mail"
+  },
+  "password_text_field": {
+    "password_label_text": "Password",
+    "password_text_hint": "Your Password",
+    "empty_field": "Please enter your password.",
+    "invalid_field": "Password must be at least 8 characters.",
+    "confirm_password_text_hint": "Confirm Password",
+    "new_password_text_hint": "New Password", 
+    "confirm_new_password_text_hint": "Confirm New Password",
+    "mismatch": "Passwords do not match"
+  },
+  "rescue_account_screens": {
+    "rescue_account": {
+      "title": "Rescue Account",
+      "body": "Insert your e-mail below to receive a confirmation code.",
+      "button_text": "Next"
+    }, 
+    "verification_code": {
+      "title": "Verification Code",
+      "body": "Enter the code sent to your e-mail.",
+      "code_not_sent": " Did not receive it? ",
+      "resend_email": "Resend e-mail",
+      "button_text": "Next"
+    },
+    "setting_new_password": {
+      "title": "Set New Password",
+      "body": "Insert your new password",
+      "button_text": "Next"
+    },
+    "success": {
+      "title": "Success",
+      "body": "Your account has been recovered. You can now log in with your updated password.",
+      "button_text": "Log In Now"
+    },
+    "failure": {
+      "no_account": "No account associated with that e-mail",
+      "invalid_code": "Invalid code"
+    },
+    "cancellation": {
+      "title": "Confirm Cancellation",
+      "body": "Are you sure you want to cancel the account rescue process?"
     }
+  },
+  "code_text_field": {
+    "invalid_field": "The code must be 4 digits.",
+    "empty_field": "Please enter the code."
+  },
+  "password_tips": {
+    "tips": " Tips\n\n",
+    "lenght": "Must be 8 characters\n",
+    "composition": "Include numbers and letters"
+  },
+  "cancellation_dialog": {
+    "continue": "Continue",
+    "cancel": "Cancel"
+  }
 }
