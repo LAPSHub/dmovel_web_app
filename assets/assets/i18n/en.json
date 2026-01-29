@@ -1,0 +1,1017 @@
+{
+    "localization": {
+        "title": "Location Permission",
+        "description": "To view nearby locations, enable your device's location."
+    },
+    "update_dialog": {
+        "title": "New Update Found",
+        "subtitle": "A new version of DMovel is available. Do you want to update now?",
+        "update_button": "Update",
+        "cancel_button": "Cancel",
+        "minimize_button": "Minimize",
+        "starting_download": "Starting download...",
+        "completed_download": "Download complete! Installing...",
+        "download_error": "Error downloading update",
+        "install_ready": "Download complete! Click to install"
+    },
+    "app_update": {
+        "check_updates": "Check for updates",
+        "already_updated": "Your app is already up to date!",
+        "status_unknown": "Update status unknown",
+        "update_available": "Update available",
+        "up_to_date": "App is up to date"
+    },
+    "app_drawer": {
+        "header": "Quick Settings"
+    },
+    "theme": {
+        "title": "Theme",
+        "change": "Change Theme",
+        "light": "Light",
+        "dark": "Dark",
+        "system": "System",
+        "choose_theme": "Choose a theme",
+        "cancel": "Cancel",
+        "ok": "Ok"
+    },
+    "button": {
+        "cancel": "Cancel",
+        "change_language": "Change Language",
+        "ok": "OK",
+        "save": "Save",
+        "edit": "Edit",
+        "delete": "Delete",
+        "add": "Add",
+        "back": "Back",
+        "next": "Next",
+        "finish": "Finish",
+        "login": "Login",
+        "register": "Register",
+        "logout": "Logout",
+        "confirm": "Confirm",
+        "send": "Send",
+        "resend": "Resend",
+        "retry": "Retry",
+        "close": "Close",
+        "yes": "Yes",
+        "no": "No"
+    },
+    "bottom_nav_bar": {
+        "home": "Home",
+        "map": "Map",
+        "profile": "Profile"
+    },
+    "language": {
+        "name": {
+            "en": "English",
+            "pt": "Portuguese",
+            "de": "German"
+        },
+        "selected_message": "Currently selected language is {language}",
+        "selection": {
+            "message": "Please select a language from the list",
+            "title": "Language Selection"
+        }
+    },
+    "logo_screen": {
+        "logo_screen": {
+            "server_error": "Server error occurred",
+            "exception": "An exception occurred: ",
+            "error": "An error occurred: "
+        },
+        "snackbar": {
+            "close": "Close"
+        },
+        "navigation": {
+            "main": "/main",
+            "sign_in": "/sign_in"
+        }
+    },
+    "sign_in_screen": {
+        "auto_login": {
+            "server_error": "Server error occurred",
+            "exception": "An exception occurred: ",
+            "error": "An error occurred: "
+        },
+        "login_screen": {
+            "login_to_account": "Log in to your DMovel account",
+            "forgot_password": "Forgot your password?",
+            "click_here": " Click here",
+            "login": "Log In",
+            "or": "Or",
+            "no_account": "Don't have an account?",
+            "register_here": " Register here",
+            "invalid_email": "Invalid email",
+            "invalid_password": "Password must be at least 8 characters.",
+            "empty_email": "Please enter your email",
+            "empty_password": "Please enter a password",
+            "log_in_failed": "Invalid e-mail or password",
+            "passwords_not_match": "Passwords do not match!",
+            "password_changed": "Password changed successfully!"
+
+        }
+    },
+    "sign_up_screen": {
+        "sign_up": {
+            "welcome_message": "Hello! Welcome to DMovel",
+            "email_address": "Email address",
+            "email_hint": "Your email",
+            "full_name": "Full name",
+            "name_hint": "Your full name",
+            "register_email": "Register email",
+            "or_message": "Or...",
+            "already_have_account": "Already have an account?",
+            "login_here": " Log in here",
+            "confirmation_code_sent": "We sent a code to you",
+            "confirmation_code_message": "This code is necessary to confirm that the email {email} belongs to you.",
+            "confirmation_code": "Confirmation Code",
+            "confirmation_code_hint": "Enter the code",
+            "password_choice": "Choose a password",
+            "password_message": "The password must have at least 8 characters.",
+            "password": "Password",
+            "confirm_password": "Confirm your password",
+            "address": "Address",
+            "address_message": "Enter your address",
+            "disability": "Disability",
+            "disability_message": "Do you have any disabilities?",
+            "select_disability": "Disability",
+            "next": "Next",
+            "finish": "Finish",
+            "register": "Register",
+            "name_empty": "Enter your name",
+            "invalid_email": "Please enter a valid email"
+        },
+        "cancellation": {
+            "body": "Are you sure you want to cancel account creation?"
+        },
+        "disability_dropdown": {
+            "no": "No",
+            "disabilities": "Disability(ies)",
+            "mental_disorders": "Mental disorder(s)",
+            "learning_disorders": "Learning disorder(s)",
+            "genetic_syndromes": "Genetic syndrome(s)"
+        },
+        "app_bar": {
+            "creating_account": "Creating account",
+            "step": "Step"
+        },
+        "snackbar": {
+            "server_error": "Server error occurred!",
+            "exception": "An exception occurred: ",
+            "error": "An error occurred: "
+        },
+        "warning_message": {
+            "passwords_not_match": "Passwords do not match",
+            "password_too_short": "The password must have at least 8 characters",
+            "confirm_password_empty": "The confirmation password cannot be empty",
+            "password_empty": "The password cannot be empty",
+            "district_empty": "Enter the district where you live",
+            "city_empty": "Select the city where you live",
+            "state_empty": "Select the state where you live",
+            "disability_empty": "Please select an option",
+            "this_is": "This is",
+            "finish_register": "Registration completed!"
+        }
+    },
+    "category_filtered_screen": {
+        "no_places_message": "Oops! It seems there are no places in the category \"{title}\" :(",
+        "register_new_place": "Register new place",
+        "all_results_seen": "You have seen all search results...",
+        "check_internet_connection": "Check your internet connection and try again!"
+    },
+    "favorites_screen": {
+        "app_bar": {
+            "title": "Favorites"
+        },
+        "favorites_screen": {
+            "no_favorites_message": "You don't have any favorite places yet!",
+            "error_message": "Sorry, an error occurred while loading your favorites list."
+        },
+        "error": {
+            "loading_list": "Error loading list"
+        }
+    },
+    "home_screen": {
+        "order_list": {
+            "most_recent": "Most recent",
+            "oldest": "Oldest",
+            "closest": "Closest (20 km)",
+            "highest_accessibility": "Highest accessibility",
+            "lowest_accessibility": "Lowest accessibility"
+        },
+        "category_list": {
+            "favorites": "Favorites",
+            "leisure": "Leisure",
+            "health": "Health",
+            "education": "Education",
+            "government": "Government",
+            "others": "Others"
+        },
+        "no_nearby_locations": "There are no locations near you!",
+        "no_locations_yet": "There are no registered locations yet :(",
+        "all_locations_viewed": "You have viewed all registered locations...",
+        "location_permission_needed": "To use this feature, you need to give us permission to access your device's location! Please try again",
+        "set_permission_on_settings": "Location permission permanently denied. You need to grant the permission in your device settings.",
+        "check_internet_connection": "Check your internet connection and try again!",
+        "location_disabled": "Device location is disabled. Try enabling it",
+        "location_unavailable": "Location service is unavailable",
+        "try_again": "Try again",
+        "open_settings": "Open settings",
+        "add_location": "Add location",
+        "categories": "Categories",
+        "locations": "Locations"
+    },
+    "profile_screen": {
+        "app_bar": {
+            "title": "logo_dmovel.png"
+        },
+        "profile_options": {
+            "registered_places": "Registered places",
+            "accessibility_ratings": "Accessibility ratings",
+            "account_security": "Account security",
+            "logout": "Logout",
+            "sub_title": "Email, password"
+        },
+        "edit_button": {
+            "text": "Edit"
+        },
+        "user_info": {
+            "address_icon": "pin_drop",
+            "disability_icon": "accessibility_new",
+            "user": "User ",
+            "no_disability": "without disability",
+            "with_disability": "with "
+        },
+        "retry_button": {
+            "text": "Retry"
+        },
+        "logout_dialog": {
+            "title": "Are you sure you want to log out?",
+            "exit": "Exit"
+        }
+    },
+    "search_screen": {
+        "app_bar": {
+            "title": "Search"
+        },
+        "text_field": {
+            "hint": "Ex: UFPA Viewpoint"
+        },
+        "empty_search_result": {
+            "message": "Oops! It seems this place is not yet registered :(",
+            "button": "Register new place"
+        },
+        "search_result": {
+            "end_message": "You have seen all search results...",
+            "not_found_message": "Didn't find the desired place?",
+            "button": "Register new place"
+        },
+        "error_message": {
+            "no_internet": "Check your internet connection and try again!"
+        },
+        "empty_search_field": {
+            "message": "To search, enter the name of the place you want to search for!"
+        }
+    },
+    "add_poi_desc": {
+        "category_list": {
+            "leisure": "Leisure",
+            "health": "Health",
+            "education": "Education",
+            "government": "Government",
+            "others": "Others"
+        },
+        "app_bar": {
+            "title": "Adding place"
+        },
+        "poi_address": {
+            "icon": "Location icon"
+        },
+        "poi_image": {
+            "button": "Tap here to choose an image"
+        },
+        "poi_name": {
+            "label": "Place name",
+            "hint": "Ex.: UFPA Viewpoint"
+        },
+        "poi_category": {
+            "label": "Place category"
+        },
+        "poi_description": {
+            "label": "Description",
+            "tool_tip": "A brief description of the place will help identify it more easily.",
+            "hint": "Ex.: Location accessible to wheelchair users"
+        },
+        "buttons": {
+            "cancel": "Cancel",
+            "save": "Save",
+            "saving": "Saving..."
+        },
+        "snackbar": {
+            "no_image_selected": "No image selected",
+            "exception_occurred": "An exception occurred: ",
+            "no_image_selected1": "No image selected",
+            "null": "Empty name or description field",
+            "no_category_selected": "Category not selected",
+            "upload_erro": "Failed to upload image",
+            "add_local": "Location added successfully!",
+            "first_avaliation": "Be the first to rate by clicking on the Rate Location button!"
+        }
+    },
+    "add_poi_location": {
+        "app_bar": {
+            "title": "Adding place"
+        },
+        "alert_dialog": {
+            "title": "Location already registered",
+            "content": "The selected location has already been registered",
+            "close_button": "Close"
+        },
+        "text_field": {
+            "title": "Search for an address",
+            "hint": "Ex.: UFPA Viewpoint"
+        },
+        "button": {
+            "search": "Search",
+            "searching": "Searching...",
+            "search_map": "Search on the map"
+        },
+        "search_results": {
+            "address_not_found": "Didn't find the place?"
+        },
+        "error_messages": {
+            "no_location_found": "Could not find a location with this information, try adding more details like the city it is located in",
+            "exception": "There was an exception: ",
+            "error": "There was an error: "
+        }
+    },
+    "add_poi_map": {
+        "app_bar": {
+            "title": "Adding place"
+        },
+        "button": {
+            "confirm": "Confirm"
+        },
+        "map": {
+            "info_window": {
+                "snippet": "Tap here to see more"
+            }
+        },
+        "error_messages": {
+            "too_close": "Too close to another place!"
+        }
+    },
+    "common": {
+        "loading_question": "Loading...",
+        "loading": "Loading...",
+        "saving": "Saving...",
+        "error": "Error",
+        "success": "Success",
+        "warning": "Warning",
+        "info": "Information",
+        "coming_soon": "Coming soon",
+        "email": "Email",
+        "password": "Password",
+        "name": "Name",
+        "description": "Description",
+        "address": "Address",
+        "optional": "Optional",
+        "try_again": "Try again"
+    },
+    "rate_poi": {
+        "app_bar": {
+            "add_rating": "Rate Place",
+            "edit_rating": "Edit Rating"
+        },
+        "text": {
+            "your_opinion_about": "Your opinion about:",
+            "here_you_should_rate": "Here you should rate the accessibility features of the place.",
+            "physical_mobility": "Physical Mobility",
+            "signaling": "Signaling",
+            "service": "Service",
+            "comment_about_the_place": "Comment about the place (optional)",
+            "example_comment": "Ex: Steep access ramp, but the service was great."
+        },
+        "snackbar": {
+            "msg": "Please rate each feature of the place."
+        },
+        "title": "What do you want to rate?",
+        "rating": {
+            "physical_mobility": {
+                "zero": "Physical mobility rating not defined.",
+                "one": "Physical mobility rating is 1.",
+                "two": "Physical mobility rating is 2.",
+                "other": "Physical mobility rating is {{value}}."
+            },
+            "signaling": {
+                "zero": "Signaling rating not defined.",
+                "one": "Signaling rating is 1.",
+                "two": "Signaling rating is 2.",
+                "other": "Signaling rating is {{value}}."
+            },
+            "service": {
+                "zero": "Service rating not defined.",
+                "one": "Service rating is 1.",
+                "two": "Service rating is 2.",
+                "other": "Service rating is {{value}}."
+            }
+        },
+        "refresh_error": "Error updating questions"
+    },
+    "show_poi": {
+        "show_poi_screen": {
+            "server_error": "Sorry, there was a problem on the server",
+            "exception": "Exception: ",
+            "error": "Error: ",
+            "server_problem": "A problem occurred on the server",
+            "favorite_error": "Error adding to favorites",
+            "server_error_exclamation": "Server error!"
+        },
+        "filter": {
+            "title": "Filter",
+            "order_by": "Order by",
+            "most_recent": "Most recent",
+            "oldest": "Oldest",
+            "highest_accessibility": "Highest rating",
+            "lowest_accessibility": "Lowest rating",
+            "review": "Review",
+            "clear_filters": "Clear filters"
+        },
+        "screen": {
+            "title": "Location",
+            "register_in": "Registered in",
+            "reviews": "Reviews ",
+            "filted": "filtered ",
+            "filter": "Filter",
+            "no_reviews": "There are no reviews for this location yet...",
+            "be_the_first": "Be the first to rate!",
+            "rate_poi": "Rate location",
+            "loading": "Loading...",
+            "description": "Description",
+            "services": "Services",
+            "reviews_title": "Reviews",
+            "view_more": "View more",
+            "translate": "Translate",
+            "translating": "Translating...",
+            "translation_error": "Error translating description",
+            "favorite_error": "Error adding location to favorites",
+            "general_score": "General score",
+            "Espaço e Mobilidade": "Space and Mobility",
+            "Sinalização e Comunicação": "Signaling and Communication",
+            "Experiência do Usuário": "User Experience",
+            "very_accessible": "Very accessible",
+            "accessible": "Accessible",
+            "neutral": "Neutral",
+            "little_accessible": "Little accessible",
+            "not_accessible": "Not accessible",
+            "search_placeholder": "Search specific items (e.g. ramps, libras, braille)",
+            "filter_by": "Rated by...",
+            "most_recent": "Most recent",
+            "highest_rating": "Highest rating",
+            "lowest_rating": "Lowest rating",
+            "applied_reviews": "applied reviews",
+            "no_reviews_available": "No reviews available",
+            "does_not_exist": "Does not exist",
+            "not_noticed": "Not noticed",
+            "exists": "Exists",
+            "bathroom_accessibility_resources": "Bathroom accessibility resources",
+            "mobility_resources_perceived": "Mobility resources perceived in the location",
+            "support_bar": "Support bar",
+            "wide_doors": "Wide doors",
+            "sufficient_maneuvering_area": "Sufficient maneuvering area",
+            "ramps": "Ramps",
+            "handrail": "Handrail",
+            "elevators": "Elevators",
+            "user_comments": "User Comments",
+            "address_not_available": "Address not available",
+            "like_error": "Error liking comment",
+            "refresh_error": "Error updating information"
+        },
+        "filter_section": {
+            "title": "title"
+        },
+        "filter_order_by_item": {
+            "title": "title"
+        },
+        "filter_rating_item": {
+            "stars": "stars"
+        }
+    },
+    "my_pois": {
+        "app_bar": {
+            "title": "Registered places"
+        },
+        "error_messages": {
+            "load_error": "Error loading the list",
+            "no_places": "You haven't registered any places yet!",
+            "fetch_error": "Sorry, an error occurred while loading your registered places list."
+        }
+    },
+    "user_ratings": {
+        "my_ratings_screen": {
+            "app_bar_title": "My ratings",
+            "no_ratings_message": "You haven't rated any places yet!",
+            "server_error_message": "Sorry, there was a problem with the server",
+            "exception_message": "Exception: ",
+            "error_message": "Error: ",
+            "loading_error_message": "Sorry, an error occurred while loading your ratings list."
+        },
+        "rating_item": {
+            "rating": {
+                "average": "averageRating"
+            }
+        }
+    },
+    "account_security_screen": {
+        "app_bar_title": "Account Security",
+        "change_email_button": "Change Email",
+        "change_password_button": "Change Password"
+    },
+    "edit_email": {
+        "edit_email_screen": {
+            "title": "Changing email",
+            "new_email_prompt": "Enter your new email",
+            "password_prompt": "Enter your password",
+            "confirmation_code_prompt": "Enter the confirmation code",
+            "continue_button": "Continue",
+            "save_button": "Save"
+        },
+        "validation_messages": {
+            "empty_password": "You need to confirm your password!",
+            "invalid_email": "Please enter a valid email",
+            "empty_email": "Enter your new email",
+            "server_error": "There was an error on the server!",
+            "exception_error": "An exception occurred: ",
+            "error": "An error occurred: "
+        },
+        "api_calls": {
+            "change_email": "auth/changeEmail",
+            "confirm_change_email": "auth/confirmChangeEmail"
+        },
+        "success_messages": {
+            "success": "Success!",
+            "new_email_instruction": "To log into your account, you must use the email "
+        }
+    },
+    "edit_password": {
+        "edit_password_screen": {
+            "title": "Changing password",
+            "old_password_prompt": "Enter your current password",
+            "new_password_prompt": "Enter your new password",
+            "confirm_new_password_prompt": "Confirm your new password",
+            "save_button": "Save"
+        },
+        "validation_messages": {
+            "password_mismatch": "Make sure your new password matches in both fields!",
+            "empty_confirm_password": "You need to confirm your new password!",
+            "empty_new_password": "You need to enter your new password!",
+            "empty_old_password": "You need to enter your current password!",
+            "server_error": "There was an error on the server!",
+            "exception_error": "An exception occurred: ",
+            "error": "An error occurred: "
+        },
+        "api_calls": {
+            "change_password": "auth/changePassword"
+        },
+        "success_messages": {
+            "success": "Password change successful!"
+        }
+    },
+    "edit_address": {
+        "title": "Edit address",
+        "save": "Save",
+        "warning": {
+            "empty_fields": "The state, city, and/or district fields cannot be left blank, please make sure all are filled in."
+        },
+        "error": {
+            "server_error": "There was an error on the server!",
+            "exception": "An exception occurred: ",
+            "error": "An error occurred: "
+        },
+        "success": {
+            "address_changed": "You have changed your address!"
+        }
+    },
+    "edit_avatar": {
+        "edit_avatar_screen": {
+            "no_image_selected": "No image selected",
+            "exception_occurred": "An exception occurred: ",
+            "error_occurred": "An error occurred: ",
+            "no_changes_made": "No changes made.",
+            "server_error": "Sorry, there was an error on the server :(",
+            "exception": "An exception occurred: ",
+            "error": "An error occurred: "
+        },
+        "title": "Edit profile picture",
+        "choose_new_photo": "Choose new photo",
+        "remove_photo": "Remove photo",
+        "save": "Save"
+    },
+    "edit_disability": {
+        "edit_disability_screen": {
+            "title": "Edit disability",
+            "question": "Do you have any disabilities?",
+            "save_button": "Save",
+            "success_message": "Disability change successful!",
+            "server_error": "There was an error on the server!",
+            "exception_message": "An exception occurred: ",
+            "error_message": "An error occurred: "
+        },
+        "disability_options": {
+            "no": "No",
+            "disabilities": "Disability(ies)",
+            "mental_disorders": "Mental disorder(s)",
+            "learning_disorders": "Learning disorder(s)",
+            "genetic_syndromes": "Genetic syndrome(s)"
+        }
+    },
+    "edit_name_screen": {
+        "title": "Edit name",
+        "input_label": "Enter your name",
+        "save_button": "Save",
+        "success_message": "Name change successful!",
+        "server_error": "There was an error on the server!",
+        "exception_message": "An exception occurred: ",
+        "error_message": "An error occurred: ",
+        "empty_name_warning": "Your name cannot be blank!"
+    },
+    "edit_profile_screen": {
+        "app_bar_title": "Edit profile",
+        "question": "What do you want to edit?",
+        "button": {
+            "profile_picture": "Profile picture",
+            "name": "Name",
+            "address": "Address",
+            "disability": "Disability"
+        }
+    },
+    "add_poi_placesearch_listview": {
+        "search_results_screen": {
+            "registered_location": "(REGISTERED LOCATION)\n",
+            "progress_indicator": {
+                "color": "Gray 400",
+                "background_color": "Gray 500"
+            }
+        },
+        "navigation": {
+            "add_poi_desc": "/add_poi_desc"
+        }
+    },
+    "google_sign_in_button": {
+        "sign_in_failed": "Sign in Failed",
+        "register_with_google": "Register with Google",
+        "sign_in_with_google": "Sign in with Google",
+        "security_code_not_confirmed": "Security code not confirmed",
+        "server_error": "Server error!",
+        "exception_occurred": "An exception occurred: ",
+        "error_occurred": "An error occurred: ",
+        "close": "Close"
+    },
+    "poi_view": {
+            "no_permission": "No permission",
+            "no_reviews": "No reviews",
+            "reviews": "reviews",
+            "review": "review",
+      "rate_now": "Rate now",
+            "km": "km"
+    },
+    "poi_ratings_listview": {
+        "delete_rating": {
+            "server_error": "Server error!",
+            "exception": "Exception: ",
+            "error": "Error: "
+        },
+        "confirm_dialog": {
+            "title": "Do you really want to delete?",
+            "irreversible_action": "This action is irreversible.",
+            "delete": "Delete",
+            "cancel": "Cancel"
+        },
+        "months": {
+            "jan": "Jan",
+            "feb": "Feb",
+            "mar": "Mar",
+            "apr": "Apr",
+            "may": "May",
+            "jun": "Jun",
+            "jul": "Jul",
+            "aug": "Aug",
+            "sep": "Sep",
+            "oct": "Oct",
+            "nov": "Nov",
+            "dec": "Dec"
+        },
+        "ratings": {
+            "physical_mobility": "Physical Mobility",
+            "signage": "Signage",
+            "service": "Service"
+        },
+        "edited_times": {
+            "once": "once",
+            "multiple": "times"
+        },
+        "edited": "Edited",
+        "rated_on": "Rated on ",
+        "translate_button": {
+            "text": "Translate"
+        },
+        "show_original_button": {
+            "text": "Show original"
+        },
+        "try_again_button": {
+            "text": "Try again"
+        },
+        "translation_error_message": "There was an error in the translation, please try again"
+    },
+    "address_form": {
+        "select_your_country": "Select your country",
+        "select_your_state": "Select your state",
+        "select_your_city": "Select your city",
+        "enter_your_district": "Enter your district",
+        "postal_code": "Enter your postal code",
+        "postal_code_not_found": "Postal code not found",
+        "empty_country": "Please select your country",
+        "empty_state": "Please select your state",
+        "empty_city": "Please select your city",
+        "empty_district": "Please enter your district",
+        "optional": "Optional",
+        "or": "Or",
+        "code_text_field": {
+            "text_hint": "Postcode",
+            "country": "Country",
+            "state": "State",
+            "city": "City",
+            "district": "District"
+        }
+    },
+    "select_search_dialog": {
+        "invalid_search_type": "Select a valid search type",
+        "select_country": "Select your Country",
+        "select_state": "Select your State",
+        "select_city": "Select your City",
+        "search_hint": "Search here",
+        "no_search_results": "No results found for your search.",
+        "error_loading_list": "Error loading the list, please try again later."
+    },
+    "show_message": {
+        "snackbar": {
+            "close": "Close"
+        }
+    },
+    "show_warning": {
+        "ok_button": "Ok"
+    },
+    "search_local": {
+        "search_local": "Search local",
+        "search_hint": "Enter the name of the location",
+        "poi_snippet": "Tap here to see more"
+    },
+    "general": {
+        "app_name": "DMovel",
+        "loading": "Loading...",
+        "saving": "Saving...",
+        "success": "Success",
+        "warning": "Warning",
+        "info": "Information",
+        "coming_soon": "Coming Soon",
+        "email": "Email",
+        "password": "Password",
+        "name": "Name",
+        "description": "Description",
+        "address": "Address",
+        "optional": "Optional"
+    },
+    "error": {
+        "server_error": "Server error. Please try again later.",
+        "network_error": "Network error. Please check your connection.",
+        "invalid_input": "Invalid input.",
+        "required_field": "Required field.",
+        "invalid_email": "Invalid email.",
+        "invalid_code": "Invalid code",
+        "password_too_short": "Password too short (minimum 6 characters).",
+        "passwords_do_not_match": "Passwords do not match.",
+        "unknown_error": "An unknown error occurred.",
+        "exception": "Exception: ",
+        "user_data_missing": "Error loading user data. Please log in again.",
+        "user_data_corrupted": "User data corrupted. Please log in again.",
+        "user_not_logged_in": "User not logged in. Please log in to continue.",
+        "user_data_missing_try_again": "User data not found. Please try reloading.",
+        "poi_data_missing": "Point of interest data not found.",
+        "missing_arguments": "Required arguments not provided."
+    },
+    "login": {
+        "title": "Login",
+        "email_hint": "Enter your email",
+        "password_hint": "Enter your password",
+        "forgot_password": "Forgot password?",
+        "no_account": "Don't have an account?",
+        "register_now": "Register now",
+        "login_failed": "Login failed. Check your credentials.",
+        "or_continue_with": "Or continue with"
+    },
+    "register": {
+        "title": "Register",
+        "name_hint": "Enter your full name",
+        "email_hint": "Enter your email",
+        "password_hint": "Create a password",
+        "confirm_password_hint": "Confirm your password",
+        "already_have_account": "Already have an account?",
+        "login_now": "Login now",
+        "registration_failed": "Registration failed.",
+        "success": "Registration successful!"
+    },
+    "home": {
+        "search_hint": "Search places...",
+        "nearby_pois": "Nearby Places",
+        "categories": "Categories",
+        "view_all": "View all"
+    },
+    "poi": {
+        "address_not_available": "Address not available",
+        "ratings": "Ratings",
+        "no_ratings": "No ratings yet.",
+        "add_rating": "Rate Place",
+        "edit_rating": "Edit Rating",
+        "report_poi": "Report Place",
+        "share_poi": "Share Place",
+        "directions": "Directions",
+        "call": "Call",
+        "website": "Website"
+    },
+    "rating": {
+        "category": {
+            "space_mobility": "Space and Mobility",
+            "signaling_communication": "Signaling and Communication",
+            "user_experience": "User Experience"
+        },
+        "scale": {
+            "very_bad": "Very Bad",
+            "very_good": "Very Good",
+            "not_accessible": "Not accessible",
+            "fully_accessible": "Fully accessible",
+            "hard_use": "Hard to use",
+            "easy_use": "Easy to use"
+        },
+        "add_comment_optional": "Add comment (optional)",
+        "not_applicable": "Not applicable / Did not use",
+        "q1": {
+            "local_accessibility": "About the accessibility of the place:"
+        },
+        "q2": {
+            "parking_access": "About access to reserved parking spaces:"
+        },
+        "q3": {
+            "doors_windows_use": "About the use of doors and windows:"
+        },
+        "q4": {
+            "bathroom_features": "Bathroom accessibility features:"
+        },
+        "bathroom": {
+            "support_bars": "Support bars",
+            "wide_doors": "Wide doors",
+            "maneuvering_area": "Maneuvering area",
+            "not_noticed": "Didn't notice",
+            "does_not_exist": "Doesn't exist",
+            "exists": "Exists"
+        },
+        "add_other_features_optional": "Describe other perceived features (optional)",
+        "success_message": "Rating saved successfully!",
+        "describe_more": "Describe more about the place",
+        "optional": "Optional",
+        "please_answer_at_least_one": "Please answer at least one question before saving."
+    },
+    "profile": {
+        "title": "Profile",
+        "edit_profile": "Edit Profile",
+        "my_pois": "My Places",
+        "user_ratings": "My Ratings",
+        "settings": "Settings",
+        "logout": "Logout",
+        "confirm_logout_title": "Confirm Logout",
+        "confirm_logout_message": "Are you sure you want to logout?"
+    },
+    "edit_profile": {
+        "title": "Edit Profile",
+        "change_photo": "Change Photo",
+        "name_label": "Name",
+        "email_label": "Email",
+        "update_success": "Profile updated successfully!",
+        "update_failed": "Failed to update profile."
+    },
+    "settings": {
+        "title": "Settings",
+        "language": "Language",
+        "theme": "Theme",
+        "theme_light": "Light",
+        "theme_dark": "Dark",
+        "theme_system": "System",
+        "notifications": "Notifications",
+        "about": "About",
+        "privacy_policy": "Privacy Policy",
+        "terms_of_service": "Terms of Service"
+    },
+    "add_poi": {
+        "title": "Add Place",
+        "step1_title": "Location",
+        "step2_title": "Description",
+        "step3_title": "Photo",
+        "search_location": "Search or mark on map",
+        "poi_name_label": "Place Name",
+        "poi_name_hint": "Ex: Example Restaurant",
+        "poi_description_label": "Description (optional)",
+        "poi_description_hint": "Briefly describe the place",
+        "poi_category_label": "Category",
+        "add_photo": "Add Photo",
+        "take_photo": "Take Photo",
+        "choose_gallery": "Choose from Gallery",
+        "photo_guidelines": "Photo guidelines: good lighting, focus on the place.",
+        "success": "Place added successfully!",
+        "failed": "Failed to add place."
+    },
+  "server_error": {
+    "error_message": "Server error occurred"
+  },
+  "email_text_field": {
+    "email_label_text": "Email address",
+    "email_text_hint": "Your E-mail",
+    "empty_field": "Please enter your e-mail.",
+    "invalid_field": "Please enter a valid e-mail"
+  },
+  "password_text_field": {
+    "password_label_text": "Password",
+    "password_text_hint": "Your Password",
+    "empty_field": "Please enter your password.",
+    "invalid_field": "Password must be at least 8 characters.",
+    "confirm_password_text_hint": "Confirm Password",
+    "new_password_text_hint": "New Password", 
+    "confirm_new_password_text_hint": "Confirm New Password",
+    "mismatch": "Passwords do not match"
+  },
+  "rescue_account_screens": {
+    "rescue_account": {
+      "title": "Rescue Account",
+      "body": "Insert your e-mail below to receive a confirmation code.",
+      "button_text": "Next"
+    }, 
+    "verification_code": {
+      "title": "Verification Code",
+      "body": "Enter the code sent to your e-mail.",
+      "code_not_sent": " Did not receive it? ",
+      "resend_email": "Resend e-mail",
+      "button_text": "Next"
+    },
+    "setting_new_password": {
+      "title": "Set New Password",
+      "body": "Insert your new password",
+      "button_text": "Next"
+    },
+    "success": {
+      "title": "Success",
+      "body": "Your account has been recovered. You can now log in with your updated password.",
+      "button_text": "Log In Now"
+    },
+    "failure": {
+      "no_account": "No account associated with that e-mail",
+      "invalid_code": "Invalid code"
+    },
+    "cancellation": {
+      "body": "Are you sure you want to cancel the account rescue process?"
+    }
+  },
+  "code_text_field": {
+    "invalid_field": "The code must be 4 digits.",
+    "empty_field": "Please enter the code."
+  },
+  "name_text_field": {
+    "label_text": "Full Name",
+    "text_hint": "Your Full Name",
+    "empty_field": "Please enter your full name",
+    "invalid_field": "The name must be only letters and spaces"
+  },
+  "password_tips": {
+    "tips": " Tips\n\n",
+    "lenght": "Must be at least 8 characters\n",
+    "composition": "Include numbers and letters"
+  },
+  "cancellation_dialog": {
+    "title": "Confirm Cancellation",
+    "continue": "Continue",
+    "cancel": "Cancel"
+  },
+  "start_up_failure": {
+    "title": "Oops! Something went wrong",
+    "message": "We are having trouble connecting to the DMovel services. Please try later."
+  },
+  "terms_acceptance": {
+    "title": "Terms and Conditions",
+    "message": "To use DMovel, you need to read and accept our Terms of Service and Privacy Policy.",
+    "i_read_and_accept": "I have read and accept the",
+    "terms_of_service": "Terms of Service",
+    "privacy_policy": "Privacy Policy",
+    "tap_to_read": "Tap to read",
+    "info_message": "You can read the full documents by tapping the links above. You must accept both to continue.",
+    "must_accept_both": "You must accept the Terms of Service and Privacy Policy to continue.",
+    "opened_in_browser": "The document has been opened in a new browser tab. After reading, you can return to continue.",
+    "open_again": "Open again"
+  }
+}
