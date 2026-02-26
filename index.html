@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!--
+    If you are serving your web app in a path other than the root, change the
+    href value below to reflect the base path you are serving from.
+
+    The path provided below has to start and end with a slash "/" in order for
+    it to work correctly.
+
+    For more details:
+    * https://developer.mozilla.org/en-US/docs/Web/HTML/Element/base
+
+    This is a placeholder for base href that will be replaced by the value of
+    the `--base-href` argument provided to `flutter build`.
+  -->
+  <base href="/dmovel_web_app/">
+
+  <script>
+    (function () {
+      const base = document.querySelector('base');
+      if (base && base.getAttribute('href') === '/dmovel_web_app/') {
+        base.setAttribute('href', '/dmovel_web_app/');
+      }
+    })();
+  </script>
+
+  <meta charset="UTF-8">
+  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+  <meta name="description" content="O DMovel nasceu com um objetivo bem simples (mas super importante): facilitar a mobilidade de pessoas com deficiência através de um app. Estamos sempre pensando em acessibilidade, e por isso, o app já funciona em Android e também na Web. 💡">
+  <meta name="google-signin-client_id"
+    content="925666705467-0dda1um68qi9u73kc8dqmiredmva7q93.apps.googleusercontent.com">
+  <!-- preload new Google Identity Services library early to avoid the built-in
+       plugin placeholder saying "Getting ready" for several seconds. -->
+  <script async defer src="https://accounts.google.com/gsi/client"></script>
+  <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBNR-5b7BkdAdex7_4L9ecsjH4i8XQuLic&libraries=drawing&loading=async">
+  </script>
+  <meta name="referrer" content="no-referrer-when-downgrade">
+
+
+  <!-- iOS meta tags & icons -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="DMovel">
+  <link rel="apple-touch-icon" href="icons/Icon-192.png">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="favicon.png" />
+
+  <title>DMovel</title>
+  <!-- Accessibility note: web builds intended for screen readers must use the HTML renderer.
+       CanvasKit does not expose the Flutter semantics tree, so screen readers will only
+       announce a single root node. Build with `flutter build web --web-renderer html`. -->
+  <link rel="manifest" href="manifest.json">
+
+  <!-- cropperjs -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/cropperjs/1.6.2/cropper.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/cropperjs/1.6.2/cropper.min.js"></script>
+  <!-- Configuração para CanvasKit -->
+  <!-- <script>
+    window.flutterConfiguration = {
+      canvasKitBaseUrl: "/canvaskit/",
+      // Configuração para resolver erros de GL Surface
+      renderer: "canvaskit",
+      // Fallback para dispositivos com problemas de WebGL
+      useColorEmoji: true
+    };
+  </script> -->
+</head>
+
+<body>
+  <script src="flutter_bootstrap.js" async></script>
+  <script src="https://apis.google.com/js/api.js"></script>
+</body>
+
+</html>
