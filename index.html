@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <!--
+    If you are serving your web app in a path other than the root, change the
+    href value below to reflect the base path you are serving from.
+
+    The path provided below has to start and end with a slash "/" in order for
+    it to work correctly.
+
+    For more details:
+    * https://developer.mozilla.org/en-US/docs/Web/HTML/Element/base
+
+    This is a placeholder for base href that will be replaced by the value of
+    the `--base-href` argument provided to `flutter build`.
+  -->
+  <base href="/dmovel_web_app/">
+
+  <meta charset="UTF-8">
+  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+  <meta name="description"
+    content="O DMovel nasceu com um objetivo bem simples (mas super importante): facilitar a mobilidade de pessoas com deficiência através de um app. Estamos sempre pensando em acessibilidade, e por isso, o app já funciona em Android e também na Web. 💡">
+  <meta name="google-signin-client_id"
+    content="925666705467-0dda1um68qi9u73kc8dqmiredmva7q93.apps.googleusercontent.com">
+  <!-- preload new Google Identity Services library early to avoid the built-in
+       plugin placeholder saying "Getting ready" for several seconds. -->
+  <script async defer src="https://accounts.google.com/gsi/client"></script>
+  <script async
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBNR-5b7BkdAdex7_4L9ecsjH4i8XQuLic&libraries=drawing&loading=async">
+    </script>
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+
+
+  <!-- iOS meta tags & icons -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="DMovel">
+  <link rel="apple-touch-icon" href="icons/Icon-192.png">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="favicon.png" />
+  <meta name="theme-color" content="#0f5f5c">
+
+  <title>DMovel</title>
+    <!-- Accessibility note: recent Flutter web releases no longer support the
+      deprecated HTML renderer. Accessibility is exposed through Flutter web
+      semantics and can be enabled programmatically from the app code. -->
+  <link rel="manifest" href="manifest.json">
+
+  <!-- PWA Install Prompt Capture -->
+  <script>
+    window.deferredPwaPrompt = null;
+    window.addEventListener('beforeinstallprompt', function (e) {
+      e.preventDefault();
+      window.deferredPwaPrompt = e;
+      console.log('[PWA] beforeinstallprompt captured');
+    });
+    window.addEventListener('appinstalled', function () {
+      console.log('[PWA] App installed');
+      window.deferredPwaPrompt = null;
+    });
+    window.triggerPwaInstall = function () {
+      if (window.deferredPwaPrompt) {
+        window.deferredPwaPrompt.prompt();
+        window.deferredPwaPrompt.userChoice.then(function (result) {
+          console.log('[PWA] User choice: ' + result.outcome);
+          window.deferredPwaPrompt = null;
+        });
+        return true;
+      }
+      return false;
+    };
+    window.isPwaInstallAvailable = function () {
+      return window.deferredPwaPrompt !== null;
+    };
+
+    // Indicates whether the app is currently running as an installed PWA.
+    // Browsers expose display-mode media queries and on iOS the `navigator.standalone` flag.
+    window.isPwaInstalled = function () {
+      return (window.matchMedia && window.matchMedia('(display-mode: standalone)').matches) ||
+        (window.navigator && window.navigator.standalone === true);
+    };
+
+    window.getPwaHostPlatform = function () {
+      var userAgent = (window.navigator && window.navigator.userAgent || '').toLowerCase();
+      var platform = '';
+      if (window.navigator) {
+        if (window.navigator.userAgentData && window.navigator.userAgentData.platform) {
+          platform = String(window.navigator.userAgentData.platform).toLowerCase();
+        } else if (window.navigator.platform) {
+          platform = String(window.navigator.platform).toLowerCase();
+        }
+      }
+      var maxTouchPoints = window.navigator && window.navigator.maxTouchPoints
+        ? window.navigator.maxTouchPoints
+        : 0;
+      var fingerprint = (platform + ' ' + userAgent).trim();
+
+      if (/android/.test(fingerprint)) {
+        return 'android';
+      }
+
+      if (/iphone|ipad|ipod/.test(fingerprint)) {
+        return 'ios';
+      }
+
+      if (/mac/.test(platform) && maxTouchPoints > 1) {
+        return 'ios';
+      }
+
+      if (/win/.test(fingerprint)) {
+        return 'windows';
+      }
+
+      if (/mac/.test(fingerprint)) {
+        return 'macos';
+      }
+
+      if (/linux|x11|cros/.test(fingerprint)) {
+        return 'linux';
+      }
+
+      return 'unknown';
+    };
+
+    window.dmovelDownloadAsset = function (url, suggestedFileName, preferBrowserNavigation) {
+      try {
+        var isAndroid = /Android/i.test(navigator.userAgent || '');
+
+        var link = document.createElement('a');
+        link.href = url;
+        link.rel = 'noopener';
+        link.style.display = 'none';
+        link.target = '_self';
+
+        if (preferBrowserNavigation || isAndroid) {
+          document.body.appendChild(link);
+          link.click();
+          document.body.removeChild(link);
+          return true;
+        }
+
+        if (suggestedFileName) {
+          link.setAttribute('download', suggestedFileName);
+        }
+        document.body.appendChild(link);
+        link.click();
+        document.body.removeChild(link);
+        return true;
+      } catch (error) {
+        console.error('[Download] Failed to trigger asset download', error);
+        return false;
+      }
+    };
+  </script>
+
+  <!-- cropperjs -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/cropperjs/1.6.2/cropper.css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/cropperjs/1.6.2/cropper.min.js"></script>
+  <!-- Configuração para CanvasKit -->
+  <!-- <script>
+    window.flutterConfiguration = {
+      canvasKitBaseUrl: "/canvaskit/",
+      // Configuração para resolver erros de GL Surface
+      renderer: "canvaskit",
+      // Fallback para dispositivos com problemas de WebGL
+      useColorEmoji: true
+    };
+  </script> -->
+
+  <style>
+    :root {
+      color-scheme: light;
+      --dmovel-ink: #083c4b;
+      --dmovel-teal: #0f5f5c;
+      --dmovel-teal-soft: #cfe9e4;
+      --dmovel-gold: #f4b73f;
+      --dmovel-surface: #f7fbfa;
+      --dmovel-card: rgba(255, 255, 255, 0.94);
+      --dmovel-shadow: 0 24px 60px rgba(8, 60, 75, 0.16);
+      --dmovel-text: #153038;
+      --dmovel-muted: #4d6970;
+    }
+
+    body {
+      margin: 0;
+      background:
+        radial-gradient(circle at top left, rgba(15, 95, 92, 0.18), transparent 35%),
+        radial-gradient(circle at bottom right, rgba(244, 183, 63, 0.2), transparent 30%),
+        linear-gradient(180deg, #edf8f5 0%, var(--dmovel-surface) 100%);
+      font-family: "Segoe UI", "Trebuchet MS", "Verdana", sans-serif;
+    }
+
+    #dmovel-loading-screen {
+      position: fixed;
+      inset: 0;
+      z-index: 9999;
+      display: grid;
+      place-items: center;
+      padding: 24px;
+      transition: opacity 280ms ease, visibility 280ms ease;
+    }
+
+    #dmovel-loading-screen.is-hidden {
+      opacity: 0;
+      visibility: hidden;
+      pointer-events: none;
+    }
+
+    .dmovel-loader-shell {
+      width: min(100%, 540px);
+      background: var(--dmovel-card);
+      border: 1px solid rgba(15, 95, 92, 0.12);
+      border-radius: 28px;
+      box-shadow: var(--dmovel-shadow);
+      overflow: hidden;
+      backdrop-filter: blur(12px);
+    }
+
+    .dmovel-loader-header {
+      padding: 20px 24px 0;
+      display: flex;
+      justify-content: space-between;
+      gap: 16px;
+      align-items: flex-start;
+    }
+
+    .dmovel-loader-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 8px 12px;
+      border-radius: 999px;
+      background: rgba(15, 95, 92, 0.08);
+      color: var(--dmovel-teal);
+      font-size: 0.8rem;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+    }
+
+    .dmovel-loader-badge::before {
+      content: "";
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: var(--dmovel-gold);
+      box-shadow: 0 0 0 8px rgba(244, 183, 63, 0.18);
+      animation: dmovel-pulse 1.4s ease-in-out infinite;
+    }
+
+    .dmovel-loader-score {
+      color: var(--dmovel-muted);
+      font-size: 0.95rem;
+      font-weight: 600;
+      white-space: nowrap;
+    }
+
+    .dmovel-loader-body {
+      padding: 12px 24px 28px;
+      display: grid;
+      gap: 20px;
+    }
+
+    .dmovel-loader-brand {
+      display: grid;
+      grid-template-columns: auto 1fr;
+      gap: 18px;
+      align-items: center;
+    }
+
+    .dmovel-loader-logo-wrap {
+      width: 78px;
+      height: 78px;
+      border-radius: 24px;
+      background: linear-gradient(135deg, rgba(15, 95, 92, 0.12), rgba(244, 183, 63, 0.2));
+      display: grid;
+      place-items: center;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .dmovel-loader-logo-wrap::after {
+      content: "";
+      position: absolute;
+      inset: auto -20% -38% auto;
+      width: 72px;
+      height: 72px;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.35);
+    }
+
+    .dmovel-loader-logo {
+      width: 48px;
+      height: 48px;
+      object-fit: contain;
+      animation: dmovel-bob 1.8s ease-in-out infinite;
+      z-index: 1;
+    }
+
+    .dmovel-loader-title {
+      margin: 0;
+      color: var(--dmovel-ink);
+      font-size: clamp(1.6rem, 3vw, 2rem);
+      line-height: 1.05;
+    }
+
+    .dmovel-loader-copy {
+      margin: 8px 0 0;
+      color: var(--dmovel-muted);
+      font-size: 1rem;
+      line-height: 1.5;
+    }
+
+    .dmovel-loader-mission {
+      padding: 18px;
+      border-radius: 20px;
+      background: linear-gradient(135deg, rgba(15, 95, 92, 0.08), rgba(244, 183, 63, 0.14));
+      display: grid;
+      gap: 8px;
+    }
+
+    .dmovel-loader-mission-label {
+      color: var(--dmovel-teal);
+      font-size: 0.78rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    .dmovel-loader-mission-text {
+      color: var(--dmovel-text);
+      font-size: 1.02rem;
+      font-weight: 600;
+      line-height: 1.5;
+    }
+
+    .dmovel-loader-progress {
+      display: grid;
+      gap: 10px;
+    }
+
+    .dmovel-loader-progress-head {
+      display: flex;
+      justify-content: space-between;
+      gap: 12px;
+      align-items: center;
+      color: var(--dmovel-text);
+      font-weight: 600;
+    }
+
+    .dmovel-loader-track {
+      width: 100%;
+      height: 14px;
+      border-radius: 999px;
+      background: rgba(15, 95, 92, 0.12);
+      overflow: hidden;
+      position: relative;
+    }
+
+    .dmovel-loader-fill {
+      position: absolute;
+      inset: 0 auto 0 0;
+      width: 42%;
+      border-radius: inherit;
+      background: linear-gradient(90deg, var(--dmovel-teal), var(--dmovel-gold), var(--dmovel-teal));
+      background-size: 200% 100%;
+      animation: dmovel-progress 1.6s linear infinite;
+    }
+
+    .dmovel-loader-steps {
+      display: grid;
+      gap: 10px;
+      padding: 0;
+      margin: 0;
+      list-style: none;
+    }
+
+    .dmovel-loader-step {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      color: var(--dmovel-muted);
+      font-size: 0.96rem;
+    }
+
+    .dmovel-loader-step::before {
+      content: "";
+      width: 12px;
+      height: 12px;
+      border-radius: 50%;
+      background: rgba(15, 95, 92, 0.18);
+      box-shadow: inset 0 0 0 2px rgba(15, 95, 92, 0.08);
+      flex-shrink: 0;
+    }
+
+    .dmovel-loader-step.is-active {
+      color: var(--dmovel-text);
+      font-weight: 700;
+    }
+
+    .dmovel-loader-step.is-active::before {
+      background: var(--dmovel-gold);
+      box-shadow: 0 0 0 6px rgba(244, 183, 63, 0.16);
+    }
+
+    .dmovel-loader-footnote {
+      color: var(--dmovel-muted);
+      font-size: 0.9rem;
+      line-height: 1.5;
+      margin: 0;
+    }
+
+    .visually-hidden {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      white-space: nowrap;
+      border: 0;
+    }
+
+    @keyframes dmovel-bob {
+      0%,
+      100% { transform: translateY(0); }
+      50% { transform: translateY(-6px); }
+    }
+
+    @keyframes dmovel-pulse {
+      0%,
+      100% { transform: scale(1); opacity: 1; }
+      50% { transform: scale(1.12); opacity: 0.82; }
+    }
+
+    @keyframes dmovel-progress {
+      0% { transform: translateX(-55%); background-position: 0% 50%; }
+      100% { transform: translateX(210%); background-position: 100% 50%; }
+    }
+
+    @media (max-width: 600px) {
+      .dmovel-loader-header,
+      .dmovel-loader-body {
+        padding-left: 18px;
+        padding-right: 18px;
+      }
+
+      .dmovel-loader-header {
+        flex-direction: column;
+      }
+
+      .dmovel-loader-brand {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .dmovel-loader-badge::before,
+      .dmovel-loader-logo,
+      .dmovel-loader-fill {
+        animation: none;
+      }
+
+      #dmovel-loading-screen {
+        transition: none;
+      }
+    }
+  </style>
+
+  <script>
+    window.dmovelLoader = (function () {
+      var overlay;
+      var statusNode;
+      var missionNode;
+      var scoreNode;
+      var steps = [];
+      var messageIndex = 0;
+      var scoreValue = 0;
+      var rotationTimer;
+      var scoreTimer;
+      var messages = [
+        'Missao 1: preparando rotas mais acessiveis para voce.',
+        'Missao 2: conectando recursos para uma navegacao mais inclusiva.',
+        'Missao 3: quase pronto para explorar o DMovel.'
+      ];
+
+      function syncActiveStep() {
+        for (var i = 0; i < steps.length; i += 1) {
+          var isActive = i === messageIndex;
+          steps[i].classList.toggle('is-active', isActive);
+          steps[i].setAttribute('aria-current', isActive ? 'step' : 'false');
+        }
+      }
+
+      function updateStatus() {
+        if (!statusNode || !missionNode) return;
+        var message = messages[messageIndex];
+        missionNode.textContent = message;
+        statusNode.textContent = message;
+        syncActiveStep();
+      }
+
+      function tickScore() {
+        if (!scoreNode) return;
+        scoreValue = Math.min(scoreValue + 25, 100);
+        scoreNode.textContent = '+ ' + scoreValue + ' pts';
+      }
+
+      function rotateMessage() {
+        messageIndex = (messageIndex + 1) % messages.length;
+        updateStatus();
+      }
+
+      function stopTimers() {
+        if (rotationTimer) clearInterval(rotationTimer);
+        if (scoreTimer) clearInterval(scoreTimer);
+      }
+
+      function markFlutterReady() {
+        overlay = overlay || document.getElementById('dmovel-loading-screen');
+        statusNode = statusNode || document.getElementById('dmovel-loading-status');
+        stopTimers();
+        if (statusNode) {
+          statusNode.textContent = 'DMovel carregado. Aproveite a experiencia.';
+        }
+        if (overlay) {
+          overlay.classList.add('is-hidden');
+          window.setTimeout(function () {
+            if (overlay && overlay.parentNode) {
+              overlay.parentNode.removeChild(overlay);
+            }
+          }, 340);
+        }
+      }
+
+      function init() {
+        overlay = document.getElementById('dmovel-loading-screen');
+        statusNode = document.getElementById('dmovel-loading-status');
+        missionNode = document.getElementById('dmovel-loading-mission');
+        scoreNode = document.getElementById('dmovel-loading-score');
+        steps = Array.prototype.slice.call(document.querySelectorAll('.dmovel-loader-step'));
+        updateStatus();
+        tickScore();
+        rotationTimer = window.setInterval(rotateMessage, 1800);
+        scoreTimer = window.setInterval(tickScore, 900);
+      }
+
+      return {
+        init: init,
+        markFlutterReady: markFlutterReady,
+      };
+    })();
+
+    window.addEventListener('DOMContentLoaded', function () {
+      window.dmovelLoader.init();
+    });
+  </script>
+</head>
+
+<body>
+  <div id="dmovel-loading-screen" aria-labelledby="dmovel-loading-title">
+    <div class="dmovel-loader-shell" role="status" aria-live="polite" aria-atomic="true">
+      <div class="dmovel-loader-header">
+        <div class="dmovel-loader-badge">Carregando jornada acessivel</div>
+        <div id="dmovel-loading-score" class="dmovel-loader-score" aria-hidden="true">+ 0 pts</div>
+      </div>
+      <div class="dmovel-loader-body">
+        <div class="dmovel-loader-brand">
+          <div class="dmovel-loader-logo-wrap" aria-hidden="true">
+            <img class="dmovel-loader-logo" src="icons/Icon-192.png" alt="" />
+          </div>
+          <div>
+            <h1 id="dmovel-loading-title" class="dmovel-loader-title">DMovel esta aquecendo os motores</h1>
+            <p class="dmovel-loader-copy">Enquanto o app organiza mapas, acessibilidade e atalhos, sua pontuacao sobe junto.</p>
+          </div>
+        </div>
+
+        <section class="dmovel-loader-mission" aria-labelledby="dmovel-loading-mission-label">
+          <div id="dmovel-loading-mission-label" class="dmovel-loader-mission-label">Missao relampago</div>
+          <p id="dmovel-loading-mission" class="dmovel-loader-mission-text">Missao 1: preparando rotas mais acessiveis para voce.</p>
+        </section>
+
+        <div class="dmovel-loader-progress" aria-hidden="true">
+          <div class="dmovel-loader-progress-head">
+            <span>Barra de impulso</span>
+            <span>Quase la</span>
+          </div>
+          <div class="dmovel-loader-track">
+            <div class="dmovel-loader-fill"></div>
+          </div>
+        </div>
+
+        <ol class="dmovel-loader-steps" aria-hidden="true">
+          <li class="dmovel-loader-step is-active">Organizando o ponto de partida</li>
+          <li class="dmovel-loader-step">Abrindo recursos de acessibilidade</li>
+          <li class="dmovel-loader-step">Preparando a exploracao do mapa</li>
+        </ol>
+
+        <p class="dmovel-loader-footnote">Dica: a versao web ativa a camada de semantica do Flutter para melhorar a experiencia com tecnologias assistivas.</p>
+      </div>
+      <span id="dmovel-loading-status" class="visually-hidden">DMovel carregando. Preparando recursos de acessibilidade.</span>
+    </div>
+  </div>
+  <script src="flutter_bootstrap.js" async></script>
+</body>
+
+</html>
