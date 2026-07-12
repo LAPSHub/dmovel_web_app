@@ -1,13 +1,18 @@
 ﻿{
     "name": "DMovel",
     "short_name": "DMovel",
-    "start_url": "./",
+    "id": "/dmovel_web_app/",
+    "start_url": "/dmovel_web_app/",
+    "scope": "/dmovel_web_app/",
     "display": "standalone",
     "background_color": "#121212",
     "theme_color": "#121212",
-    "description": "DMovel - Aplicativo de mobilidade urbana para pessoas com deficiÃªncia.",
+    "description": "DMovel - Aplicativo de mobilidade urbana para pessoas com deficiência.",
     "orientation": "portrait-primary",
     "prefer_related_applications": false,
+    "launch_handler": {
+        "client_mode": "navigate-existing"
+    },
     "icons": [
         {
             "src": "icons/Icon-192.png",

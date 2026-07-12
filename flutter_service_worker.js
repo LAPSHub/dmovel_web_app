@@ -29,3 +29,5 @@ self.addEventListener('activate', (event) => {
     })()
   );
 });
+!function(){try{var e="undefined"!=typeof window?window:"undefined"!=typeof global?global:"undefined"!=typeof globalThis?globalThis:"undefined"!=typeof self?self:{},n=(new e.Error).stack;n&&(e._sentryDebugIds=e._sentryDebugIds||{},e._sentryDebugIds[n]="c2a022bf-be5e-5da3-ab85-4aa89f402aa8")}catch(e){}}();
+//# debugId=c2a022bf-be5e-5da3-ab85-4aa89f402aa8

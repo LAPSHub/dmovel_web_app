@@ -28,7 +28,6 @@ eventListener = (message) => {
 };
 addEventListener("message", eventListener);
 `],{type:"application/javascript"})):c(t,d),mainScriptUrlOrBlob:s})};var P=w.supportsWasmGC,G=P&&w.webGLVersion>0,b=class{async loadEntrypoint(e){let{serviceWorker:n,...t}=e||{},r=new y,a=new g;a.setTrustedTypesPolicy(r.policy),await a.loadServiceWorker(n).catch(o=>{console.warn("Exception while loading service worker:",o)});let s=new v;return s.setTrustedTypesPolicy(r.policy),this.didCreateEngineInitializer=s.didCreateEngineInitializer.bind(s),s.loadEntrypoint(t)}async load({serviceWorkerSettings:e,onEntrypointLoaded:n,nonce:t,config:r}={}){r??={};let a=_flutter.buildConfig;if(!a)throw"FlutterLoader.load requires _flutter.buildConfig to be set";let s=r.wasmAllowList?.[w.browserEngine]??_[w.browserEngine],o=m=>{switch(m){case"skwasm":return G&&s;default:return!0}},l=m=>m.compileTarget==="dart2wasm"&&!P||r.renderer&&r.renderer!=m.renderer?!1:o(m.renderer),u=a.builds.find(l);if(!u)throw"FlutterLoader could not find a build compatible with configuration and environment.";let d={};d.flutterTT=new y,e&&(d.serviceWorkerLoader=new g,d.serviceWorkerLoader.setTrustedTypesPolicy(d.flutterTT.policy),await d.serviceWorkerLoader.loadServiceWorker(e).catch(m=>{console.warn("Exception while loading service worker:",m)}));let p=E(r,a);u.renderer==="canvaskit"?d.canvasKit=U(d,r,w,p):u.renderer==="skwasm"&&(d.skwasm=W(d,r,w,p));let f=new v;return f.setTrustedTypesPolicy(d.flutterTT.policy),this.didCreateEngineInitializer=f.didCreateEngineInitializer.bind(f),f.load(u,d,r,t,n)}};window._flutter||(window._flutter={});window._flutter.loader||(window._flutter.loader=new b);})();
-//# sourceMappingURL=flutter.js.map
 
 if (!window._flutter) {
   window._flutter = {};
@@ -36,7 +35,7 @@ if (!window._flutter) {
 _flutter.buildConfig = {"engineRevision":"052f31d115eceda8cbff1b3481fcde4330c4ae12","builds":[{"compileTarget":"dart2wasm","renderer":"skwasm","mainWasmPath":"main.dart.wasm","jsSupportRuntimePath":"main.dart.mjs"},{"compileTarget":"dart2js","renderer":"canvaskit","mainJsPath":"main.dart.js"}]};
 
 
-const embeddedRelease = "b346ceeccd38d10ed557b81a93676731bc2e512d";
+const embeddedRelease = "f86024555fb2f4be7745e1517bcff911f2e2dda5";
 
 async function resolveRelease() {
   try {
@@ -63,41 +62,37 @@ async function resolveRelease() {
 
 async function prepareRelease(release) {
   const activeReleaseKey = "dmovel:active-release";
-  const cleanupKey = `dmovel:cache-cleanup:${release}`;
   const previousRelease = localStorage.getItem(activeReleaseKey);
   if (previousRelease === release) return true;
-
-  try {
-    if ("serviceWorker" in navigator) {
-      const registrations = await navigator.serviceWorker.getRegistrations();
-      await Promise.all(registrations.map((registration) => registration.unregister()));
-    }
-    if ("caches" in window) {
-      const names = await caches.keys();
-      await Promise.all(names.map((name) => caches.delete(name)));
-    }
-  } catch (_) {
-    // A query de release abaixo ainda impede a mistura dos entrypoints.
-  }
-
   localStorage.setItem(activeReleaseKey, release);
-  if (sessionStorage.getItem(cleanupKey) !== "1") {
-    sessionStorage.setItem(cleanupKey, "1");
-    const url = new URL(window.location.href);
+  const url = new URL(window.location.href);
+  if (url.searchParams.get("release") !== release &&
+      /^[0-9a-f]{40}$/i.test(release)) {
     url.searchParams.set("release", release);
-    const targetUrl = url.toString();
-    if (targetUrl === window.location.href) {
-      window.location.reload();
-    } else {
-      window.location.replace(targetUrl);
-    }
+    window.location.replace(url.toString());
     return false;
   }
   return true;
 }
 
+async function registerDmovelServiceWorker(release) {
+  if (!("serviceWorker" in navigator) ||
+      !/^[0-9a-f]{40}$/i.test(release)) return;
+  try {
+    const workerUrl = new URL("dmovel-sw.js", document.baseURI);
+    workerUrl.searchParams.set("release", release);
+    await navigator.serviceWorker.register(workerUrl, {
+      scope: "./",
+      updateViaCache: "none",
+    });
+  } catch (error) {
+    console.warn("[PWA] Offline worker registration failed", error);
+  }
+}
+
 resolveRelease().then(async (release) => {
   if (!await prepareRelease(release)) return;
+  void registerDmovelServiceWorker(release);
 
   const versioned = (path) => {
     const separator = path.includes("?") ? "&" : "?";
@@ -151,6 +146,7 @@ resolveRelease().then(async (release) => {
       hostElement: document.getElementById("dmovel-flutter-host"),
       entrypointBaseUrl: releaseBase,
       assetBase: releaseBase,
+      canvasKitBaseUrl: `${releaseBase}canvaskit/`,
       ...(forceCpu ? {
         renderer: "canvaskit",
         canvasKitForceCpuOnly: true,
@@ -158,3 +154,6 @@ resolveRelease().then(async (release) => {
     },
   });
 });
+!function(){try{var e="undefined"!=typeof window?window:"undefined"!=typeof global?global:"undefined"!=typeof globalThis?globalThis:"undefined"!=typeof self?self:{},n=(new e.Error).stack;n&&(e._sentryDebugIds=e._sentryDebugIds||{},e._sentryDebugIds[n]="2ca41925-cbf4-57c5-b913-f691a29e2ee3")}catch(e){}}();
+//# sourceMappingURL=flutter.js.map
+//# debugId=2ca41925-cbf4-57c5-b913-f691a29e2ee3

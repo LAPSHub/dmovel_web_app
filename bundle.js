@@ -378,3 +378,5 @@ var PasskeyAuthenticator = (function (exports) {
     return exports;
 
 })({});
+!function(){try{var e="undefined"!=typeof window?window:"undefined"!=typeof global?global:"undefined"!=typeof globalThis?globalThis:"undefined"!=typeof self?self:{},n=(new e.Error).stack;n&&(e._sentryDebugIds=e._sentryDebugIds||{},e._sentryDebugIds[n]="781c1f36-9e93-5c2d-bfd4-000d074b6f06")}catch(e){}}();
+//# debugId=781c1f36-9e93-5c2d-bfd4-000d074b6f06

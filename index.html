@@ -54,20 +54,27 @@
       window.deferredPwaPrompt = e;
       console.log('[PWA] beforeinstallprompt captured');
     });
+    window.pwaInstalledThisSession = false;
     window.addEventListener('appinstalled', function () {
       console.log('[PWA] App installed');
       window.deferredPwaPrompt = null;
+      window.pwaInstalledThisSession = true;
     });
-    window.triggerPwaInstall = function () {
-      if (window.deferredPwaPrompt) {
-        window.deferredPwaPrompt.prompt();
-        window.deferredPwaPrompt.userChoice.then(function (result) {
-          console.log('[PWA] User choice: ' + result.outcome);
-          window.deferredPwaPrompt = null;
-        });
-        return true;
+    window.triggerPwaInstall = async function () {
+      if (!window.deferredPwaPrompt) {
+        return 'unavailable';
       }
-      return false;
+      var prompt = window.deferredPwaPrompt;
+      window.deferredPwaPrompt = null;
+      try {
+        await prompt.prompt();
+        var result = await prompt.userChoice;
+        console.log('[PWA] User choice: ' + result.outcome);
+        return result.outcome === 'accepted' ? 'accepted' : 'dismissed';
+      } catch (error) {
+        console.error('[PWA] Install prompt failed', error);
+        return 'failed';
+      }
     };
     window.isPwaInstallAvailable = function () {
       return window.deferredPwaPrompt !== null;
@@ -122,53 +129,11 @@
       return 'unknown';
     };
 
-    window.dmovelOpenDownloadTab = function () {
+    window.dmovelDownloadAsset = function (url) {
       try {
-        var win = window.open('download_pending.html', '_blank', 'noopener');
-        return win || null;
-      } catch (e) {
-        return null;
-      }
-    };
-
-    window.dmovelCompleteDownloadTab = function (tab, url) {
-      try {
-        if (tab && !tab.closed) {
-          tab.location.href = url;
-          return true;
-        }
-      } catch (e) {}
-      return false;
-    };
-
-    window.dmovelCloseDownloadTab = function (tab) {
-      try {
-        if (tab && !tab.closed) {
-          tab.close();
-        }
-      } catch (e) {}
-    };
-
-    window.dmovelDownloadAsset = function (url, suggestedFileName, preferBrowserNavigation) {
-      try {
-        // 1. Tentar window.open explícito em nova aba para isolar o contexto de navegação
-        var opened = window.open(url, '_blank', 'noopener');
-        if (opened) {
-          return true;
-        }
-
-        // 2. Criar elemento <a> com target="_blank" para evitar que o download seja
-        // iniciado dentro do próprio frame SPA (_self) e fique travado em 100% no Chrome Android
-        var link = document.createElement('a');
-        link.href = url;
-        link.target = '_blank';
-        link.rel = 'noopener noreferrer';
-        if (suggestedFileName) {
-          link.setAttribute('download', suggestedFileName);
-        }
-        document.body.appendChild(link);
-        link.click();
-        document.body.removeChild(link);
+        // GitHub responde com Content-Disposition: attachment. A navegação no
+        // contexto atual não depende da autorização transitória de popup.
+        window.location.assign(url);
         return true;
       } catch (error) {
         console.error('[Download] Failed to trigger asset download', error);
