@@ -1,7 +1,7 @@
 'use strict';
 
 const SCOPE = new URL(self.registration.scope);
-const BUILD_RELEASE = 'f86024555fb2f4be7745e1517bcff911f2e2dda5';
+const BUILD_RELEASE = '2927424cb8b0fecb0a73f3e67df1c7fd18e3711a';
 const RELEASE = new URL(self.location.href).searchParams.get('release') || BUILD_RELEASE;
 const VALID_RELEASE = /^[0-9a-f]{40}$/i.test(RELEASE);
 const CACHE_PREFIX = 'dmovel-v1:';

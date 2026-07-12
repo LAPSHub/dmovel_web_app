@@ -131,9 +131,18 @@
 
     window.dmovelDownloadAsset = function (url) {
       try {
-        // GitHub responde com Content-Disposition: attachment. A navegação no
-        // contexto atual não depende da autorização transitória de popup.
-        window.location.assign(url);
+        // Use um link descartável no mesmo contexto. No Android isso entrega
+        // o response diretamente ao Download Manager, sem deixar a navegação
+        // da PWA pendurada em 100% e sem depender de popup/aba intermediária.
+        var link = document.createElement('a');
+        link.href = url;
+        link.target = '_self';
+        link.rel = 'noopener';
+        link.download = '';
+        link.style.display = 'none';
+        document.body.appendChild(link);
+        link.click();
+        link.remove();
         return true;
       } catch (error) {
         console.error('[Download] Failed to trigger asset download', error);
