@@ -150,6 +150,30 @@
       }
     };
 
+    window.dmovelPreparePersistentStorage = async function () {
+      if (!navigator.storage) {
+        return JSON.stringify({ supported: false, persisted: false });
+      }
+      var persisted = false;
+      try {
+        persisted = await navigator.storage.persisted();
+        if (!persisted && navigator.storage.persist) {
+          persisted = await navigator.storage.persist();
+        }
+        var estimate = navigator.storage.estimate
+          ? await navigator.storage.estimate()
+          : {};
+        return JSON.stringify({
+          supported: true,
+          persisted: persisted,
+          usage: estimate.usage || 0,
+          quota: estimate.quota || 0,
+        });
+      } catch (_) {
+        return JSON.stringify({ supported: true, persisted: false });
+      }
+    };
+
     window.dmovelLoadScript = function (id, src, attributes) {
       return new Promise(function (resolve, reject) {
         var existing = document.getElementById(id);
