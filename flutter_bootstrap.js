@@ -38,7 +38,7 @@ if (!window._flutter) {
 _flutter.buildConfig = {"engineRevision":"052f31d115eceda8cbff1b3481fcde4330c4ae12","builds":[{"compileTarget":"dart2wasm","renderer":"skwasm","mainWasmPath":"main.dart.wasm","jsSupportRuntimePath":"main.dart.mjs"},{"compileTarget":"dart2js","renderer":"canvaskit","mainJsPath":"main.dart.js"}]};
 
 
-const embeddedRelease = "dfb7f857a3605c9c5544668695e4f485a32de3e2";
+const embeddedRelease = "6963780f40876e570f65beb6c4499a1281c3184c";
 
 async function resolveRelease() {
   try {
