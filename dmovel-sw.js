@@ -1,7 +1,7 @@
 'use strict';
 
 const SCOPE = new URL(self.registration.scope);
-const BUILD_RELEASE = '70cb9d4205f0233c255f4dd11194be3c6e6c4959';
+const BUILD_RELEASE = '83cbd25164d1f274a4cf8a483e58d927c9c0dc11';
 const RELEASE = new URL(self.location.href).searchParams.get('release') || BUILD_RELEASE;
 const VALID_RELEASE = /^[0-9a-f]{40}$/i.test(RELEASE);
 const CACHE_PREFIX = 'dmovel-v1:';
@@ -131,5 +131,3 @@ self.addEventListener('message', (event) => {
     })());
   }
 });
-!function(){try{var e="undefined"!=typeof window?window:"undefined"!=typeof global?global:"undefined"!=typeof globalThis?globalThis:"undefined"!=typeof self?self:{},n=(new e.Error).stack;n&&(e._sentryDebugIds=e._sentryDebugIds||{},e._sentryDebugIds[n]="219a1220-f464-581c-82fb-f0ff7de256ed")}catch(e){}}();
-//# debugId=219a1220-f464-581c-82fb-f0ff7de256ed
