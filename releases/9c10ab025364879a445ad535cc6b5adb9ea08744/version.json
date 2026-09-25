@@ -1,0 +1,1 @@
+{"app_name":"dmovelapp","version":"1.1.0","build_number":"60","package_name":"dmovelapp","release_version":"1.1.0+60","git_sha":"9c10ab025364879a445ad535cc6b5adb9ea08744","build_time":"2026-09-25T04:39:36Z","environment":"dev","web_schema":1,"service_worker":"dmovel-sw-v1","offline_manifest":"releases/9c10ab025364879a445ad535cc6b5adb9ea08744/offline-manifest.json"}
