@@ -12,7 +12,7 @@ Escolha sua plataforma e mergulhe de cabeça. A versão mais recente está sempr
 | Plataforma | Para quem é? | Link para Download |
 | :---: | :--- | :---: |
 | 🤖 **Android** | Usuários finais (versão estável) | [**DMovel.apk**](https://github.com/LAPSHub/dmovel_web_app/releases/download/v1.1.0%2B61-android/DMovel.apk) |
-| 🧑‍💻 **Android (Dev)** | Desenvolvedores e testadores | [**DMovel-Dev.apk**](https://github.com/LAPSHub/dmovel_web_app/releases/download/v1.2.0%2B74-android/DMovel-Dev.apk) |
+| 🧑‍💻 **Android (Dev)** | Desenvolvedores e testadores | [**DMovel-Dev.apk**](https://github.com/LAPSHub/dmovel_web_app/releases/download/v1.2.1%2B75-android/DMovel-Dev.apk) |
 | 🍏 **iOS** | Usuários finais (versão estável) | [**dmovelapp.ipa**](#) |
 | 🧑‍💻 **iOS (Dev)** | Desenvolvedores e testadores | [**DMovel-Dev.ipa**](#) |
 | 🌐 **Web** | Todos (acesso instantâneo) | [**Acessar Versão Web**](https://lapshub.github.io/dmovel_web_app/) |
